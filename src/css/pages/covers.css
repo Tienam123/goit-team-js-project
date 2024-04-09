@@ -24,7 +24,6 @@ body {
   display: flex;
   transform: rotate(7deg);
   margin-bottom: 20px;
-  height: 350px;
 }
 
 .marquee__line {
@@ -33,11 +32,12 @@ body {
   align-items: center;
   justify-content: center;
   width: calc(100% / 3);
-  height: 96%;
-  transform: translateX(30%);
   white-space: nowrap;
+
+}
+.animate-block {
+  transform: translateX(30%);
   animation-name: marqueeLine;
-  animation-duration: 25s;
   animation-duration: 25s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;

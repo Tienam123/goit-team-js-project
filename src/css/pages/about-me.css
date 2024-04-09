@@ -1,13 +1,19 @@
-/*Основные*/
+/*Основные стили*/
 
 
+/*Медиа запросы*/
+@media screen and (max-width: 374.98px) {
 
-/*Медиа запрос 320*/
+}
 
+@media screen and (min-width: 375px) {
 
-/*планшет*/
+}
 
+@media screen and (min-width: 768px) {
 
+}
 
+@media screen and (min-width: 1440px) {
 
-/*комп*/
+}

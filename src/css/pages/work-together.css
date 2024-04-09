@@ -85,6 +85,8 @@
   padding: 64px 32px;
   width: 343px;
   height: 276px;
+  position: fixed;
+  background-color: aquamarine;
 }
 /Медиа запросы/ @media screen and (max-width: 374.98px) {
 }

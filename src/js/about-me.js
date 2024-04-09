@@ -2,7 +2,6 @@ import Swiper from 'swiper';
 import 'swiper/css';
 import 'swiper/css/scrollbar';
 import Accordion from 'accordion-js';
-import 'accordion-js/dist/accordion.min.css';
 
 new Swiper('.swiper', {
   direction: 'horizontal',

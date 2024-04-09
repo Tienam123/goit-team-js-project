@@ -23,7 +23,7 @@ body {
 
 .marquee__inner {
   display: flex;
-  transform: rotate(16deg);
+  transform: rotate(12deg);
   height: 400px;
   margin-bottom: 20px;
 }
@@ -38,8 +38,8 @@ body {
   height: 96%;
   white-space: nowrap;
   animation-name: marqueeLine;
-  animation-duration: 10s;
-  animation-timing-function: ease-in-out;
+  animation-duration: 20s;
+  animation-timing-function: linear;
   animation-iteration-count: infinite;
 }
 

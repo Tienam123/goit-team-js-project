@@ -25,6 +25,7 @@ button {
   cursor: pointer;
   border: none;
   appearance: none;
+  background-color: transparent;
 }
 
 img {

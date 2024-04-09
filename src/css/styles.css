@@ -4,19 +4,26 @@
   | default @import url()
   |============================
 */
+@import url('modern-normalize/modern-normalize.css');
 @import url('./reset.css');
 @import url('./base-styles.css');
-@import url(./pages/header.css);
-@import url(./pages/hero.css);
-@import url(./pages/about-me.css);
-@import url(./pages/benefits.css);
-@import url(./pages/projects.css);
-@import url(./pages/faq.css);
-@import url(./pages/covers.css);
-@import url(./pages/reviews.css);
-@import url(./pages/work-together.css);
-@import url(./pages/modal.css);
-@import url('modern-normalize/modern-normalize.css');
+@import url('./components/button-hover.css');
+@import url('./components/button.css');
+@import url('./components/skils-button-active.css');
+@import url('./components/skils-button.css');
+@import url('./components/skils-button-disactive.css');
+
+@import url('./pages/header.css');
+@import url('./pages/hero.css');
+@import url('./pages/about-me.css');
+@import url('./pages/benefits.css');
+@import url('./pages/projects.css');
+@import url('./pages/faq.css');
+@import url('./pages/covers.css');
+@import url('./pages/reviews.css');
+@import url('./pages/work-together.css');
+@import url('./pages/modal.css');
+@import url('./pages/skills-list.css');
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -34,5 +41,11 @@
   -webkit-text-size-adjust: 100%;
 
 
-  --main-color: #000000
+  --hard-black-color: #1C1D20;
+  --medium-black-color: #42527;
+  --light-black-color: #3B3B3B;
+  --red-color: #ED3B44;
+  --white-color: #FAFAFA;
+
+  --animation-hover: all 250ms linear;
 }

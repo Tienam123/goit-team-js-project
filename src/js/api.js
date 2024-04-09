@@ -1,7 +1,9 @@
-function postData() {
+import axios from 'axios';
 
+function postData() {
+axios.post()
 }
 
-function getData() {
+async function getData() {
 
 }

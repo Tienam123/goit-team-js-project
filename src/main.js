@@ -1,4 +1,5 @@
 import '@/js/api.js';
+import '@/js/iziToast.js'
 import '@/js/slider.js';
 import '@/js/header.js';
 import '@/js/hero.js';

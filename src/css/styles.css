@@ -16,6 +16,7 @@
 @import url(./pages/covers.css);
 @import url(./pages/reviews.css);
 @import url(./pages/work-together.css);
+@import url(./pages/modal.css);
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;

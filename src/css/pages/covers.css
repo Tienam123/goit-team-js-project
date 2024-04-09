@@ -1,14 +1,30 @@
-body {
-  margin: 0;
-}
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 .content {
   position: relative;
+}
+.content::before {
+  content: "";
+  display: block;
+  width: 350px;
+  height: 350px;
+  background-color:rgba(237, 59, 68, 0.6);
+  border-radius: 50%;
+  filter: blur(172px);
+  position: absolute;
+  top: 300px;
+  left: 30px;
+}
+.content::after {
+  content: "";
+  display: block;
+  width: 350px;
+  height: 350px;
+  background-color:rgba(237, 59, 68, 0.6);
+  border-radius: 50%;
+  filter: blur(172px);
+  position: absolute;
+  top: 0px;
+  left: 30%;
 }
 .marquee {
   position: absolute;
@@ -18,6 +34,7 @@ body {
   font-weight: 600;
   font-size: 34px;
   text-transform: uppercase;
+  z-index: 2;
 }
 
 .marquee__inner {

@@ -1,7 +1,11 @@
+.covers {
+}
 
 .content {
   position: relative;
+
 }
+
 .content::before {
   content: "";
   display: block;
@@ -26,51 +30,49 @@
   top: 0px;
   left: 30%;
 }
+
+
 .marquee {
-  position: absolute;
-  left: 0;
   overflow: hidden;
-  font-family: "Pridi", sans-serif;
-  font-weight: 600;
-  font-size: 34px;
-  text-transform: uppercase;
   z-index: 2;
 }
-
+.marquee__line {
+  flex-shrink: 0;
+  overflow: hidden;
+  height: 346px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+  img {
+    height: 100%;
+  }
+}
 .marquee__inner {
   display: flex;
-  transform: rotate(7deg);
-  margin-bottom: 20px;
+  transform: rotate(16deg);
 }
 
-.marquee__line {
-  margin-right: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: calc(100% / 3);
-  white-space: nowrap;
-
-}
 .animate-block {
-  transform: translateX(30%);
   animation-name: marqueeLine;
   animation-duration: 25s;
-  animation-timing-function: linear;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 
 @keyframes marqueeLine {
   0% {
-    transform: translateX(30%);
+    transform: translateX(0);
   }
 
-  50% {
-    transform: translateX(-20%);
+  35% {
+    transform: translateX(-55%);
   }
 
+  65% {
+    transform: translateX(55%);
+  }
   100% {
-    transform: translateX(30%);
+    transform: translateX(0);
+
   }
 
 }
@@ -93,5 +95,7 @@
 }
 
 @media screen and (min-width: 1440px) {
+
+
 
 }

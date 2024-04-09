@@ -22,22 +22,23 @@ body {
 }
 
 .marquee__inner {
-  height: 100vh;
   display: flex;
   transform: rotate(16deg);
+  height: 400px;
+  margin-bottom: 20px;
 }
 
 .marquee__line {
   background-color: #FFDC00;
-  flex-shrink: 0;
   margin-right: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: calc(100% / 8);
+  width: calc(100% / 3);
+  height: 96%;
   white-space: nowrap;
   animation-name: marqueeLine;
-  animation-duration: 5s;
+  animation-duration: 10s;
   animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }

@@ -4,9 +4,18 @@
   | default @import url()
   |============================
 */
+@import url('modern-normalize/modern-normalize.css');
 @import url('./reset.css');
-@import url('./vite-promo.css');
-@import url('./header.css');
+@import url('./base-styles.css');
+@import url(./pages/header.css);
+@import url(./pages/hero.css);
+@import url(./pages/about-me.css);
+@import url(./pages/benefits.css);
+@import url(./pages/projects.css);
+@import url(./pages/faq.css);
+@import url(./pages/covers.css);
+@import url(./pages/reviews.css);
+@import url(./pages/work-together.css);
 
 :root {
   font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
@@ -14,12 +23,15 @@
   line-height: 24px;
   font-weight: 400;
 
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
+  color: rgba(250, 250, 250, 0.6);
+  background-color: #1C1D20;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+
+
+  --main-color: #000000
 }

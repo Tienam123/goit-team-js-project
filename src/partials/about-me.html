@@ -8,7 +8,7 @@
           unique
           personality.</p>
       </div>
-      <div class="am-photo">
+      <div>
         <picture>
           <source srcset="./img/about-me/photo_desc1x.jpg  1x,
                                                     ./img/about-me/photo_desc2x.jpg 2x" media="(min-width: 1158px)" />
@@ -16,15 +16,17 @@
                                                     ./img/about-me/photo_tab2x.jpg 2x" media="(min-width: 768px)" />
           <source srcset="./img/about-me/photo_mob1x.jpg  1x,
                                                     ./img/about-me/photo_mob1x.jpg 2x" media="(max-width: 767px)" />
-          <img src="./img/about-me/photo_mob1x.jpg" alt="my-photo" />
+          <img class="am-photo" src="./img/about-me/photo_mob1x.jpg" alt="my-photo" />
         </picture>
       </div>
     </div>
     <div class="am-main accordion-container">
       <div class="ac">
         <div class="ac-header am-accordion-wrap">
-
-          <button type="button" class="ac-trigger">About me</button>
+          <button type="button" class="ac-trigger">About me <svg class="ac-icon" width="20" height="20"
+              viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 12.5L10 7.5L5 12.5" stroke="#FAFAFA" stroke-width="2" />
+            </svg></button>
         </div>
         <div class="ac-panel">
           <ul class="aboutme-list aboutme-text">
@@ -58,80 +60,55 @@
           </ul>
         </div>
       </div>
-
       <div class="ac">
         <div class="ac-header am-accordion-wrap">
-
-          <button type="button" class="ac-trigger">Role</button>
+          <button type="button" class="ac-trigger">Role <svg class="ac-icon" width="20" height="20" viewBox="0 0 20 20"
+              fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 7.5L10 12.5L5 7.5" stroke="#FAFAFA" stroke-width="2" />
+            </svg></button>
         </div>
         <div class="ac-panel">
           <ul class="aboutme-list aboutme-text">
             <li>
-              I am Lloyd Jefferson
+              Frontend development
             </li>
             <li>
-              Able to work both
+              HeadlessCMS, Wordpress
+            </li>
+            <li>
+              Blender(enjoy)
             </li>
           </ul>
         </div>
       </div>
       <div class="ac">
         <div class="ac-header am-accordion-wrap">
-
-          <button type="button" class="ac-trigger">Education</button>
+          <button type="button" class="ac-trigger" aria-expanded="true">Education <svg class="ac-icon" width="20"
+              height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M15 7.5L10 12.5L5 7.5" stroke="#FAFAFA" stroke-width="2" />
+            </svg></button>
         </div>
         <div class="ac-panel">
           <ul class="aboutme-list aboutme-text">
             <li>
-              I am Lloyd Jefferson
+              2018 - 2019 / Frontend Development Diploma, GoIT IT School, New York
             </li>
             <li>
-              Able to work both
+              2019 - 2020 / Advanced Web Development Certificate, GoIT IT School, New York
+            </li>
+            <li>
+              2020 - 2022 / Advanced Blender Animation Techniques, Udemy
             </li>
           </ul>
         </div>
       </div>
-
-      <!-- <div class="am-aboutme">
-        <div class="am-accordion-wrap">
-          <p>About me</p>
-          <div>O</div>
-        </div> -->
-
-    </div>
-    <!-- <div class="am-accordion-wrap am-wrapper">
-        <p>Role</p>
-        <div>O</div>
-      </div> -->
-    <!-- <div class="am-accordion-wrap am-wrapper">
-        <p>Education</p>
-        <div>O</div>
-      </div> -->
-  </div>
-  <!-- <div class="swiper">
-    <div class="swiper-wrapper am-skills">
-      <div class="swiper-slide">HTML/CSS</div>
-      <div class="swiper-slide">JavaScript</div>
-      <div class="swiper-slide">React</div>
-      <div class="swiper-slide">Node. js</div>
-      <div class="swiper-slide">React Native</div>
-      <div class="swiper-slide">Soft skills</div>
-    </div> -->
-  <!-- <ul class="am-skills swiper">
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-        <li></li>
-      </ul> -->
-
-  <!-- <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <!-- 
+  <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
         <path d="M6.6665 20H33.3332" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
         <path d="M23.3335 10L33.3335 20L23.3335 30" stroke="#3B3B3B" stroke-width="2" stroke-linecap="round"
           stroke-linejoin="round" />
       </svg> -->
-  </div>
+    </div>
 
   </div>
 </section>

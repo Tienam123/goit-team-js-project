@@ -7,12 +7,10 @@ const inputComments = document.querySelector('input#user-comments');
 let emailInput;
 let commentsInput;
 
-buttonEl.addEventListener('submit', e => {
+buttonEl.addEventListener('click', e => {
   e.preventDefault();
   emailInput = inputEmail.value;
   commentsInput = inputComments.value;
   postData(emailInput, commentsInput);
-  console.log(emailInput);
-  console.log(commentsInput);
-  console.log(postData(emailInput, commentsInput));
+  document.querySelector('form.work-together-form').reset();
 });

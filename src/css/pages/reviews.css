@@ -1,19 +1,155 @@
 /*Основные стили*/
+.section {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
 
+.container {
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+.reviews-text-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.4);
+  text-transform: uppercase;
+  margin-bottom: 32px;
+}
+
+.reviews-card {
+  margin-bottom: 32px;
+}
+
+.reviews-card-list {
+  width: 100%;
+  height: 302px;
+  display: flex;
+  background-color: transparent;
+  padding: 32px 24px;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  border-radius: 20px;
+}
+
+.reviews-item-img {
+  object-fit: cover;
+  border-radius: 10px;
+  width: 48px;
+  height: 48px;
+  margin-bottom: 32px;
+}
+
+.reviews-card-text-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #fafafa;
+  margin-bottom: 8px;
+}
+
+.reviews-card-text {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: rgba(250, 250, 250, 0.6);
+  width: 100%;
+  height: 158px;
+}
+
+.arrows-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.arrows-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  padding: 14px;
+  width: 52px;
+  height: 52px;
+  background-color: transparent;
+}
+
+.left-btn {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.right-btn {
+  border: 1px solid rgba(250, 250, 250, 0.5);
+}
+
+.btn-icon {
+  width: 24px;
+  height: 24px;
+}
+
+.left-btn-icon {
+  fill: 3B3B3B 100%;
+}
+
+.right-btn-icon {
+  fill: FAFAFA 100%;
+}
 
 /*Медиа запросы*/
 @media screen and (max-width: 374.98px) {
-
+  .reviews-card-list {
+    width: 296px;
+  }
 }
 
 @media screen and (min-width: 375px) {
-
 }
 
 @media screen and (min-width: 768px) {
+  .container {
+    padding: 0 32px;
+  }
 
+  .reviews-card-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  .arrows-box {
+    gap: 20px;
+  }
+
+  .arrows-btn {
+    padding: 18px;
+    width: 68px;
+    height: 68px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  .reviews-card-list {
+    width: 284px;
+  }
 
+  /* .reviews-card-list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 16px;
+  }
+
+  .reviews-card-item {
+    width: calc((100% - 48px) / 3);
+  }*/
 }

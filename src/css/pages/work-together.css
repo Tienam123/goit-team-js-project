@@ -1,3 +1,7 @@
+.work-together {
+  background-color: var(--hard-black-color);
+}
+
 .work-together-div {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -79,15 +83,79 @@
   justify-content: center;
   align-items: center;
 }
+
+/* ============== МОДАЛЬНЕ ВІКНО =============== */
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(15, 15, 16, 0.6);
+  opacity: 0;
+  pointer-events: none;
+}
+.modal-overlay-is-open {
+  opacity: 1;
+  pointer-events: auto;
+}
 .modal-window {
+  background-color: var(--hard-black-color);
   border: 1px solid rgba(250, 250, 250, 0.1);
   border-radius: 20px;
   padding: 64px 32px;
-  width: 343px;
-  height: 276px;
-  position: fixed;
-  background-color: aquamarine;
+  max-width: 343px;
+  max-height: 80%;
+  position: relative;
 }
+.work-together-button-modale-window {
+  background-color: transparent;
+  width: 22px;
+  height: 22px;
+  border: none;
+  padding: 0;
+  line-height: 0;
+  stroke: var(--white-color);
+  stroke-width: 2px;
+  margin-bottom: 21px;
+  cursor: pointer;
+  position: absolute;
+  top: 21px;
+  right: 16px;
+}
+
+.modal-window-text {
+  width: 279px;
+  height: 148px;
+}
+.modal-window-div-for-text {
+  width: 279px;
+  height: 148px;
+}
+.modal-window-title {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: var(--white-color);
+  margin-bottom: 16px;
+}
+.modal-window-paragraph {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(250, 250, 250, 0.6);
+}
+/* ===================================== */
 /Медиа запросы/ @media screen and (max-width: 374.98px) {
 }
 
@@ -133,7 +201,26 @@
   width: 239px;
   height: 55px;
 }
+/* ============== МОДАЛЬНЕ ВІКНО =============== */
+.modal-window {
+  max-width: 492px;
+}
+.work-together-button-modale-window {
+  width: 24px;
+  height: 24px;
+  top: 20px;
+  right: 20px;
+}
+.work-together-icon {
+  width: 12px;
+  height: 12px;
+}
+.modal-window-div-for-text {
+  width: 364px;
+  height: auto;
+}
 
+/* ============================================== */
 @media screen and (min-width: 1440px) {
   .work-together-input {
     width: 390px;

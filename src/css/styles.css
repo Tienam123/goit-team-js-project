@@ -7,6 +7,8 @@
 @import url('modern-normalize/modern-normalize.css');
 @import url('./reset.css');
 @import url('./base-styles.css');
+@import url('./fonts.css');
+
 @import url('./components/button-hover.css');
 @import url('./components/button.css');
 @import url('./components/skils-button-active.css');

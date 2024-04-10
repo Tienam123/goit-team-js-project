@@ -1,0 +1,44 @@
+@font-face {
+  font-weight: 500;
+  font-family: Inter;
+  src: url("../fonts/InterTight-Medium.otf");
+}
+@font-face {
+  font-weight: 500;
+  font-family: Inter;
+  src: url("../fonts/InterTight-Medium.ttf");
+}
+@font-face {
+  font-weight: 500;
+  font-family: Inter;
+  src: url("../fonts/InterTight-Medium.woff");
+}
+@font-face {
+  font-weight: 500;
+  font-family: Inter;
+  src: url("../fonts/InterTight-Medium.woff2");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: Inter;
+  src: url("../fonts/InterTight-SemiBold.otf");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: Inter;
+  src: url("../fonts/InterTight-SemiBold.woff");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: Inter;
+  src: url("../fonts/InterTight-SemiBold.woff2");
+}
+
+@font-face {
+  font-weight: 700;
+  font-family: Inter;
+  src: url("../fonts/InterTight-SemiBold.ttf");
+}

@@ -6,7 +6,7 @@ titles.forEach(item => item.addEventListener('click', () => {
 
   if(activeContent.classList.contains('active')) {
     activeContent.classList.remove('active');
-    item.classList.contains('active');
+    // item.classList.contains('active'); //? тут возврат true непонятно ддя чего может add? вместо contains(contains возвращает true false)
     activeContent.style.maxHeight = 0;
   } else {
     contents.forEach(element => {

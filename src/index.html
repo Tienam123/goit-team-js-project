@@ -11,13 +11,25 @@
   <link rel="stylesheet"
         href="./css/styles.css" />
 </head>
-<body>
+<body class="light">
 <header>
   <!--  Людмила Тверезовская -->
   <load
   ="partials/header.html" />
-  <img src="./icons/logo.svg"
-       alt="">
+
+  <a href="/"
+     class="logo-link">
+    <img src="./icons/logo.svg"
+         alt="">
+    <span>jefferson*</span>
+  </a>
+  <label class="theme-switcher"
+         for="switcher">
+    <input type="checkbox"
+           class="theme-switcher__checkbox"
+           id="switcher">
+    <span class="theme-switcher__switch"></span>
+  </label>
 </header>
 
 <main>

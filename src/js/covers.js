@@ -19,4 +19,3 @@
   observer.observe(coverBlock);
 
 })();
-

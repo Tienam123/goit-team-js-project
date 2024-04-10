@@ -1,9 +1,9 @@
 import axios from 'axios';
 
-function postData() {
+export async function postData() {
 axios.post()
 }
 
-async function getData() {
+export async function getData() {
 
 }

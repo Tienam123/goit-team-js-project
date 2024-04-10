@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-function postData(emailInput, commentsInput) {
+export function postData(emailInput, commentsInput) {
   axios
     .post('https://portfolio-js.b.goit.study/api-docs/requests', {
       email: emailInput,

@@ -43,7 +43,7 @@
   margin-bottom: 16px;
   border-radius: 0;
 }
-.work-together-button {
+/* .work-together-button {
   background: var(--red-color);
   border-radius: 100%;
   width: 100px;
@@ -54,7 +54,7 @@
   color: var(--white-color);
   margin-top: 16px;
   margin-bottom: 64px;
-}
+} */
 .work-together-ul {
   display: flex;
 }
@@ -124,10 +124,10 @@
   margin-right: 16px;
   margin-bottom: 0;
 }
-.work-together-button {
+/* .work-together-button {
   margin-left: 16px;
   margin-bottom: 18px;
-}
+} */
 .work-together-link {
   padding: 18px 32px;
   width: 239px;
@@ -140,9 +140,9 @@
     height: 44px;
     margin-right: 32px;
   }
-  .work-together-button {
+  /* .work-together-button {
     margin-left: 54px;
     width: 150px;
     height: 150px;
-  }
+  } */
 }

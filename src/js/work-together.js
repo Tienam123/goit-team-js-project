@@ -31,14 +31,20 @@ closeModal.addEventListener('click', () => {
   modalOverlay.classList.add('visually-hidden');
 });
 // show mistakes if write incorrect information in inputs
-// document.getElementById('user-email').addEventListener('input', function () {
-//   var email = this.value;
-//   var pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-//   if (!pattern.test(email)) {
-//     iziToast.error({
-//       title: 'Error',
-//       message: 'Please enter a valid email address.',
-//       position: 'topRight',
-//     });
-//   }
-// });
+document.getElementById('user-email').addEventListener('input', function () {
+  const email = this.value;
+  const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+  if (!pattern.test(email)) {
+    iziToast.error({
+      title: 'Error',
+      message: 'Invalid email, try again',
+      position: 'topRight',
+    });
+  } else {
+    iziToast.success({
+      title: 'OK',
+      color: 'green',
+      message: 'Success!',
+    });
+  }
+});

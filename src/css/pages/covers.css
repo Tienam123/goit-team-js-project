@@ -15,7 +15,7 @@ body {
   right: -800px;
   left: 0;
   overflow: hidden;
-  font-family: "Pridi", sans-serif;
+  font-family: 'Pridi', sans-serif;
   font-weight: 600;
   font-size: 34px;
   text-transform: uppercase;
@@ -29,7 +29,7 @@ body {
 }
 
 .marquee__line {
-  background-color: #FFDC00;
+  background-color: #ffdc00;
   margin-right: 10px;
   display: flex;
   align-items: center;
@@ -54,28 +54,20 @@ body {
 
   20% {
     transform: translateX(0);
-
   }
-
 }
-
 
 /*Основные стили*/
 
-
 /*Медиа запросы*/
 @media screen and (max-width: 374.98px) {
-
 }
 
 @media screen and (min-width: 375px) {
-
 }
 
 @media screen and (min-width: 768px) {
-
 }
 
 @media screen and (min-width: 1440px) {
-
 }

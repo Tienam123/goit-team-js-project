@@ -1,13 +1,3 @@
-<header class="header">
-  <div class="container">
-    <a href="">
-      <img src=".h/icons/logo.svg"
-           alt="">
-    </a>
-  </div>
-</header>
-
-
 <!--В Header-і знаходиться logo, навігація по сайту та посилання "Order the project"-->
 
 <!--Logo складається з контентного зображення та напису-->
@@ -25,3 +15,106 @@
 <!--Меню також можна закрити по clickу на кнопку-іконку закриття."-->
 
 <!--Header має прозорий фон і має бути спозиціоновано через absolute поверх секції Hero.-->
+<header class="header-section" id="header-section-id">
+  <div class="header container">
+    <ul class="header-list">
+      <li class="header-item">
+        <div class="header__logo">
+          <div>
+            <img class="header_logo_img" src="../icons/logo.svg" alt="photo" />
+          </div>
+          <!-- <a class="header_logo__text">jefferson*</a> -->
+        </div>
+      </li>
+      <li class="header-item nav-item header-item-two">
+        <div class="navigation__menu">
+          <p class="header-menu__title">Menu</p>
+          <nav class="header__menu">
+            <ul class="header-menu__list">
+              <li>
+                <a href="#about-me-section-id">About me</a>
+              </li>
+              <li>
+                <a href="#benefits-section-id">Benefits</a>
+              </li>
+              <li>
+                <a href="#projects-section-id">Projects</a>
+              </li>
+              <li>
+                <a href="#faq-section-id">FAQ</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </li>
+      <li class="header-item header-item-next">
+        <a
+          href="#work-together-section-id"
+          class="navigation-link smooth-scroll"
+          >Order the project</a
+        >
+      </li>
+      <li class="header-item header-item-four">
+        <!-- <svg class="burger" width="28" height="28">
+          <use
+            class="header-burger-use"
+            href="../sprites/symbol-defs.svg#icon-burger"
+          ></use>
+        </svg> -->
+        <svg
+          width="28"
+          height="28"
+          viewBox="0 0 24 12"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          style="width: 28px; height: 28px"
+        >
+          <path
+            d="M1.5 1.91666H22.5M1.5 10.0833H22.5"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          />
+        </svg>
+      </li>
+    </ul>
+  </div>
+
+  <div class="mobile-menu-header">
+    <svg class="close-btn-header" width="28" height="28">
+      <use href="../sprites/symbol-defs.svg#icon-close"></use>
+    </svg>
+    <ul class="mobile-menu-header-list">
+      <li class="mobile-menu-item">
+        <a
+          href="#about-me-section-id"
+          class="mobile-menu-item-link smooth-scroll"
+          >About me</a
+        >
+      </li>
+      <li class="mobile-menu-item">
+        <a
+          href="#benefits-section-id"
+          class="mobile-menu-item-link smooth-scroll"
+          >Benefits</a
+        >
+      </li>
+      <li class="mobile-menu-item">
+        <a
+          href="#projects-section-id"
+          class="mobile-menu-item-link smooth-scroll"
+          >Projects</a
+        >
+      </li>
+      <li class="mobile-menu-item">
+        <a href="#faq-section-id" class="mobile-menu-item-link smooth-scroll"
+          >FAQ</a
+        >
+      </li>
+    </ul>
+    <a href="#work-together-section-id" class="link-header-link smooth-scroll"
+      >Order the project</a
+    >
+  </div>
+</header>

@@ -1,5 +1,5 @@
 import { postData } from './api';
-const buttonEl = document.querySelector('.skills-button');
+const buttonEl = document.querySelector('button#submit-btn');
 const inputEmail = document.querySelector('input#user-email');
 const inputComments = document.querySelector('input#user-comments');
 

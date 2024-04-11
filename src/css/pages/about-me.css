@@ -64,17 +64,6 @@
   height: 72px;
   /* border: 1px solid rgba(250, 250, 250, 0.2); */
 }
-/* .am-aboutme-description {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 32px;
-  margin: 48px;
-  max-width: 612px;
-  height: 320px;
-  margin-left: auto;
-} */
 .aboutme-list {
   display: flex;
   /* align-items: flex-end; */
@@ -92,21 +81,6 @@
   font: 500 16px / 1.5 'Inter Tight', sans-serif;
   letter-spacing: -0.02em;
   color: #fafafa;
-}
-.am-skills {
-  max-width: 100%;
-}
-.am-skills > div.swiper-slide {
-  max-width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-div.swiper-slide:hover {
-  background-color: #ed3b44;
 }
 
 .ac {
@@ -165,7 +139,12 @@ padding: 10px;
 width: 40px;
 height: 40px;
 margin-left: auto;
+transform: rotate(0);
+}
 
+.active {
+  transform: rotate(180deg);
+  transition: all 0.5s ease-in;
 }
 .ac.js-enabled .ac-panel {
   visibility: hidden;

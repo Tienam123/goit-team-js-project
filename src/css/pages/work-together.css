@@ -1,12 +1,9 @@
 .work-together {
   background-color: var(--hard-black-color);
 }
-
 .work-together-div {
   padding-top: 32px;
   padding-bottom: 32px;
-  /* padding-right: 16px;
-  padding-left: 16px; */
 }
 .work-together-div-title {
   display: flex;
@@ -39,33 +36,18 @@
   width: 343px;
   height: 44px;
   background-color: transparent;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 20px;
-  border: none;
+  padding: 0 0 20px 0;
+  /* border: none; */
   font-family: var(--font-family);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.6);
   margin-bottom: 16px;
-  border-radius: 0;
+  border: 0;
   outline: 0;
-  border-width: 0 0 2px;
-  border-color: hsl(0, 88%, 48%);
+  border-bottom: 1px solid #fafafa33;
 }
-/* .work-together-input-decor-el {
-  position: relative;
-}
-.work-together-input-decor-el::after {
-  position: absolute;
-  display: block;
-  width: 100%;
-  height: 1px;
-  content: '';
-  background-color: #fafafa;
-} */
 /* .work-together-button {
   background: var(--red-color);
   border-radius: 100%;

@@ -3,14 +3,13 @@
 
 .content {
   position: relative;
-
 }
-
 .content::before {
+  z-index: 0;
   content: "";
   display: block;
-  width: 350px;
-  height: 350px;
+  width: 50px;
+  height: 50px;
   background-color:rgba(237, 59, 68, 0.6);
   border-radius: 50%;
   filter: blur(172px);
@@ -19,22 +18,25 @@
   left: 30px;
 }
 .content::after {
-  content: "";
+  content: "а";
   display: block;
-  width: 350px;
-  height: 350px;
+  width:50px;
+  height: 50px;
+  z-index: 0;
   background-color:rgba(237, 59, 68, 0.6);
   border-radius: 50%;
   filter: blur(172px);
   position: absolute;
-  top: 0px;
+  top: 0;
   left: 30%;
 }
 
 
 .marquee {
+  top: 0;
+  left: 0;
+  z-index: 10;
   overflow: hidden;
-  z-index: 2;
 }
 .marquee__line {
   flex-shrink: 0;
@@ -78,7 +80,7 @@
 }
 
 
-/*Основные стили*/
+/*!*Основные стили*!*/
 
 
 /*Медиа запросы*/
@@ -95,7 +97,5 @@
 }
 
 @media screen and (min-width: 1440px) {
-
-
 
 }

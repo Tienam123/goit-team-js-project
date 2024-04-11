@@ -105,9 +105,9 @@
   justify-content: center;
   align-items: center;
 }
-div.swiper-slide:hover {
-  background-color: #ed3b44;
-}
+/*div.swiper-slide:hover {*/
+/*  background-color: #ed3b44;*/
+/*}*/
 
 .ac {
   margin-top: 8px;

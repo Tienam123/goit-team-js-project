@@ -133,4 +133,7 @@ align-self: center;
 max-width: 1084px;
   font-size: 68px;
 }
+.hero__title {
+  margin-top: 500px;
+}
 }

@@ -268,9 +268,9 @@ body.light .work-together-link:hover {
   .work-together-title-second {
     margin-top: 7px;
   }
-  .skills-button {
+  /* .skills-button {
     margin-left: 32px;
-  }
+  } */
   .work-together-form-and-button {
     display: flex;
     align-items: center;

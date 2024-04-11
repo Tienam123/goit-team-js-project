@@ -15,3 +15,8 @@ export async function postData(emailInput, commentsInput) {
 }
 
 async function getData() {}
+export async function postData() {
+axios.post()
+}
+
+

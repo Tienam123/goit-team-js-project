@@ -30,3 +30,21 @@ closeModal.addEventListener('click', () => {
   modalWindow.classList.add('visually-hidden');
   modalOverlay.classList.add('visually-hidden');
 });
+// show mistakes if write incorrect information in inputs
+document.getElementById('user-email').addEventListener('input', function () {
+  const email = this.value;
+  const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+  if (!pattern.test(email)) {
+    iziToast.error({
+      title: 'Error',
+      message: 'Invalid email, try again',
+      position: 'topRight',
+    });
+  } else {
+    iziToast.success({
+      title: 'OK',
+      color: 'green',
+      message: 'Success!',
+    });
+  }
+});

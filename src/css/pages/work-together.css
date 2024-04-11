@@ -1,6 +1,35 @@
-.work-together {
-  background-color: var(--hard-black-color);
+/* ============= */
+body.light .work-together-title {
+  color: var(--hard-black-color);
 }
+body.light .work-together-span {
+  color: var(--red-color);
+}
+body.light .work-together-input {
+  color: var(--light-black-color);
+  border-bottom: 1px solid var(--light-black-color);
+}
+body.light .work-together-input:hover {
+  color: var(--hard-black-color);
+  border-bottom: 1px solid var(--hard-black-color);
+}
+body.light .skills-button {
+  color: var(--light-black-color);
+  border: none;
+}
+
+body.light .work-together-link {
+  border: 1px solid var(--light-black-color);
+  color: var(--light-black-color);
+}
+body.light .work-together-link:hover {
+  border: 1px solid var(--hard-black-color);
+  transition: var(--animation-hover);
+}
+/* body.dark {
+} */
+/* ============ */
+
 .work-together-div {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -20,7 +49,7 @@
   line-height: 100%;
   letter-spacing: -0.03em;
   text-transform: uppercase;
-  color: #fafafa;
+  color: var(--white-color);
 }
 .work-together-title-second {
   margin-top: 8px;
@@ -37,7 +66,6 @@
   height: 44px;
   background-color: transparent;
   padding: 0 0 20px 0;
-  /* border: none; */
   font-family: var(--font-family);
   font-weight: 500;
   line-height: 1.5;
@@ -46,8 +74,21 @@
   margin-bottom: 16px;
   border: 0;
   outline: 0;
-  border-bottom: 1px solid #fafafa33;
+  border-bottom: 1px solid rgba(250, 250, 250, 0.2);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 320px;
 }
+.work-together-input:hover {
+  border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+  color: var(--white-color);
+}
+
+.work-together-input-tel {
+  margin-bottom: 40px;
+}
+
 /* .work-together-button {
   background: var(--red-color);
   border-radius: 100%;
@@ -83,6 +124,10 @@
   align-content: center;
   justify-content: center;
   align-items: center;
+}
+.work-together-link:hover {
+  border: 1px solid var(--white-color);
+  transition: var(--animation-hover);
 }
 .work-together-tel {
   max-width: 118px;
@@ -223,6 +268,9 @@
   .work-together-title-second {
     margin-top: 7px;
   }
+  .skills-button {
+    margin-left: 32px;
+  }
   .work-together-form-and-button {
     display: flex;
     align-items: center;
@@ -236,9 +284,13 @@
     height: 44px;
     margin-right: 32px;
   }
+
   .work-together-div {
     padding-left: 196px;
     padding-right: 196px;
+  }
+  .work-together-ul {
+    padding-top: 63px;
   }
   /* .work-together-button {
     margin-left: 54px;

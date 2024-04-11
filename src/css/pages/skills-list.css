@@ -1,9 +1,7 @@
-/*======================================================*/
-.skills-button {
-  color:var(--medium-black-color);
-  padding: 50px 50px;
-  border-radius: 50%;
-  border: 1px solid var(--light-black-color);
+
+/*Основные стили*/
+.all-skills-list {
+  display: flex;
 }
 .container {
 }
@@ -11,6 +9,16 @@
 .container-skill-list {
 }
 
+
+.skill-list-name {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #1c1d20;
+}
 .swiper-skills-list {
   overflow: hidden;
   position: relative;
@@ -23,6 +31,7 @@
 }
 
 .swiper-slide {
+
 }
 
 .main-skill-list {

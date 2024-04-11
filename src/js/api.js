@@ -1,18 +1,18 @@
 import axios from 'axios';
 
 export async function postData(emailInput, commentsInput) {
-  axios
-    .post('https://portfolio-js.b.goit.study/api-docs/requests', {
-      email: emailInput,
-      comments: commentsInput,
-    })
-    .then(function (response) {
-      console.log(response);
-    })
-    .catch(function (error) {
-      console.log(error);
-    });
+  try {
+    const response = await axios.post(
+      'https://portfolio-js.b.goit.study/api-docs/requests',
+      {
+        email: emailInput,
+        comments: commentsInput,
+      }
+    );
+    console.log(response.data);
+  } catch (error) {
+    console.error(error);
+  }
 }
 
 async function getData() {}
-

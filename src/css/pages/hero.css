@@ -9,6 +9,7 @@ header {
 min-height: 100vh;
 }
 .swiper-hero-slide img {
+  width: 100%;
   min-height: 100vh;
 }
 .hero__links {

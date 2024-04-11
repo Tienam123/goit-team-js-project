@@ -1,38 +1,93 @@
 
 /*Основные стили*/
+/*body.light .класс(на котором меняется цвет) {
 
+}*/
 
-
+.benefits{
+    margin-top: 332px;
+    margin-bottom: 32px;
+}
 .benefits-wrapper{
     max-width: 344px;
+    margin: 0 auto;
 }
 .benefits-title{
-    font-family: "Inter Tight", sans-serif;
     font-weight: 600;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: -0.02em;
     text-transform: uppercase;
-    color: black;
-    text-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    color: rgba(250, 250, 250, 0.4);
+    text-shadow: 0px 4px 4px rgba(0,0,0,0.24);
+
+    margin-bottom: 32px;
 }
 
 
 .benefit-title{
-   font-family: "Inter Tight", sans-serif;
 font-weight: 600;
 font-size: 20px;
 line-height: 1.5;
 letter-spacing: -0.02em;
 color: #fafafa; 
+margin-bottom: 16px;
+}
+
+.benefit-text{
+    width: 296px;
+font-weight: 500;
+font-size: 16px;
+line-height: 1.5;
+letter-spacing: -0.02em;
+color: rgba(250, 250, 250, 0.6); 
+}
+.benefit-icon-box{
+    border-radius: 10px;
+width: 48px;
+height: 48px;
+background: #ed3b44;
+display: flex;
+justify-content: center;
+align-items: center;
+margin-bottom: 64px;
+}
+.benefits-list{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+   
+}
+.benefits-item{
+    border-radius: 20px;
+padding: 24px;
+width: 344px;
+background: #242527;
 }
 
 
+.benefit-link{
+font-weight: 500;
+font-size: 16px;
+letter-spacing: -0.02em;
+color: #fafafa;
+border: 1px solid rgba(250, 250, 250, 0.2);
+border-radius: 60px;
+ margin-top: 32px;
+ display: flex;
+ max-width: 187px;
+height: 55px;
+display: flex;
+justify-content: center;
+align-items: center;
+}
 
+/*hhhhhh*/
 
 /*Медиа запросы*/
 @media screen and (max-width: 374.98px) {
 
+    
 }
 
 @media screen and (min-width: 375px) {
@@ -40,9 +95,46 @@ color: #fafafa;
 }
 
 @media screen and (min-width: 768px) {
- 
+    .benefits-list{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+   
+    .benefits-wrapper{
+        max-width: 704px;
+    
+    }
+    .benefits-item{
+       
+    max-width: calc((100% - 16px) / 2);
+    
+   
+    }
 }
 
 @media screen and (min-width: 1440px) {
-
+.benef-title-box{
+    display: flex;
+    
+}
+.benefits-wrapper{
+    max-width: 1376px;
+}
+.benefits-title{
+    margin-right: auto;
+}
+.benef-list-link-box{
+    display: flex;
+    
+}
+.benefits-item{
+    width: 332px;
+    }
+    .benefits-list{
+        max-width: 680px;
+}
+.benef-list-link-box{
+    display: flex;
+    flex-direction: column;
+}
 }

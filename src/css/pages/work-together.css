@@ -1,7 +1,6 @@
 .work-together {
   background-color: var(--hard-black-color);
 }
-
 .work-together-div {
   padding-top: 32px;
   padding-bottom: 32px;
@@ -30,27 +29,25 @@
 .work-together-span {
   color: var(--red-color);
 }
+.work-together-div-for-inputs {
+  display: block;
+}
 .work-together-input {
-  width: 100%;
+  width: 343px;
   height: 44px;
   background-color: transparent;
-  padding-left: 0;
-  padding-right: 0;
-  padding-top: 0;
-  padding-bottom: 20px;
-  border: none;
+  padding: 0 0 20px 0;
+  /* border: none; */
   font-family: var(--font-family);
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: rgba(250, 250, 250, 0.6);
   margin-bottom: 16px;
-  border-radius: 0;
+  border: 0;
+  outline: 0;
+  border-bottom: 1px solid #fafafa33;
 }
-/* .work-together-input::after {
-  content: '';
-  background-color: rgba(250, 250, 250, 0.2);
-} */
 /* .work-together-button {
   background: var(--red-color);
   border-radius: 100%;
@@ -69,12 +66,12 @@
 .work-together-list {
   margin-left: 4px;
   display: flex;
+  margin-bottom: 20px;
 }
 .work-together-link {
   border: 1px solid rgba(250, 250, 250, 0.2);
   border-radius: 60px;
-  padding: 10px 12px;
-  width: 178px;
+  max-width: 178px;
   height: 37px;
   font-family: var(--font-family);
   font-weight: 500;
@@ -86,6 +83,13 @@
   align-content: center;
   justify-content: center;
   align-items: center;
+}
+.work-together-tel {
+  max-width: 118px;
+  padding: 0px;
+}
+.work-together-mail {
+  padding: 10px 12px;
 }
 
 /* ============== МОДАЛЬНЕ ВІКНО =============== */
@@ -103,10 +107,10 @@
   opacity: 0;
   pointer-events: none;
 }
-/* .modal-overlay-is-open {
+.modal-overlay-is-open {
   opacity: 1;
   pointer-events: auto;
-} */
+}
 .modal-window {
   background-color: var(--hard-black-color);
   border: 1px solid #fafafa1a;
@@ -158,6 +162,44 @@
   text-align: center;
   color: rgba(250, 250, 250, 0.6);
 }
+/* .work-together-div-for-inputs {
+  display: flex;
+  /* flex-direction: column;} */
+
+.work-together-input {
+  width: 245px;
+  height: 44px;
+  margin-right: 16px;
+  margin-bottom: 0;
+}
+/* .work-together-button {
+    margin-left: 16px;
+    margin-bottom: 18px;
+  } */
+.work-together-link {
+  /* padding: 18px 32px; */
+  width: 239px;
+  height: 55px;
+}
+/* ============== МОДАЛЬНЕ ВІКНО =============== */
+.modal-window {
+  max-width: 492px;
+}
+.work-together-button-modale-window {
+  width: 24px;
+  height: 24px;
+  top: 20px;
+  right: 20px;
+}
+.work-together-icon {
+  width: 12px;
+  height: 12px;
+}
+.modal-window-div-for-text {
+  width: 364px;
+  height: auto;
+}
+
 /* ===================================== */
 /Медиа запросы/ @media screen and (max-width: 374.98px) {
 }
@@ -186,43 +228,6 @@
     align-items: center;
   }
 }
-.work-together-div-for-inputs {
-  display: flex;
-  /* flex-direction: column; */
-}
-.work-together-input {
-  width: 245px;
-  height: 44px;
-  margin-right: 16px;
-  margin-bottom: 0;
-}
-/* .work-together-button {
-  margin-left: 16px;
-  margin-bottom: 18px;
-} */
-.work-together-link {
-  padding: 18px 32px;
-  width: 239px;
-  height: 55px;
-}
-/* ============== МОДАЛЬНЕ ВІКНО =============== */
-.modal-window {
-  max-width: 492px;
-}
-.work-together-button-modale-window {
-  width: 24px;
-  height: 24px;
-  top: 20px;
-  right: 20px;
-}
-.work-together-icon {
-  width: 12px;
-  height: 12px;
-}
-.modal-window-div-for-text {
-  width: 364px;
-  height: auto;
-}
 
 /* ============================================== */
 @media screen and (min-width: 1440px) {
@@ -230,6 +235,10 @@
     width: 390px;
     height: 44px;
     margin-right: 32px;
+  }
+  .work-together-div {
+    padding-left: 196px;
+    padding-right: 196px;
   }
   /* .work-together-button {
     margin-left: 54px;

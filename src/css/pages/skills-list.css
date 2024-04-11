@@ -1,14 +1,14 @@
+
 /*Основные стили*/
 .all-skills-list {
   display: flex;
 }
-.container-skill-list {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 0 16px;
-  gap: 55px;
+.container {
 }
+
+.container-skill-list {
+}
+
 
 .skill-list-name {
   font-family: 'Inter Tight', sans-serif;
@@ -19,85 +19,35 @@
   letter-spacing: -0.02em;
   color: #1c1d20;
 }
+.swiper-skills-list {
+  overflow: hidden;
+  position: relative;
+}
+.swiper-button-next {
+  position: absolute;
+  top: 10px;
+}
+.swiper-wrapper {
+}
+
+.swiper-slide {
+
+}
 
 .main-skill-list {
-  display: flex;
+}
+
+.skills-button {
+}
+
+.skill-list {
+}
+
+.skill-list-name {
 }
 
 .arrow-list {
-  width: 28px;
-  height: 28px;
-  border: none;
-  background: transparent;
 }
 
-/*Медиа запросы*/
-@media screen and (max-width: 374.98px) {
-  .skills-button {
-    padding: 0;
-  }
-  .skill-list {
-    display: flex;
-    width: 130px;
-    height: 130px;
-    justify-content: center;
-    align-items: center;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  .skills-button {
-    padding: 0;
-  }
-  .skill-list {
-    display: flex;
-    width: 130px;
-    height: 130px;
-    justify-content: center;
-    align-items: center;
-  }
-  div[data-id='3'] {
-    display: none;
-  }
-  div[data-id='4'] {
-    display: none;
-  }
-  div[data-id='5'] {
-    display: none;
-  }
-  div[data-id='6'] {
-    display: none;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .skills-button {
-    padding: 0;
-  }
-  .skill-list {
-    display: flex;
-    width: 200px;
-    height: 200px;
-    justify-content: center;
-    align-items: center;
-  }
-  .skill-list-name {
-    font-size: 20px;
-  }
-
-  div[data-id='3'] {
-    display: flex;
-  }
-}
-
-@media screen and (min-width: 1440px) {
-  div[data-id='4'] {
-    display: flex;
-  }
-  div[data-id='5'] {
-    display: flex;
-  }
-  div[data-id='6'] {
-    display: flex;
-  }
+.arrow-list-icons {
 }

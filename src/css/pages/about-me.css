@@ -15,8 +15,12 @@
   letter-spacing: -0.03em;
   line-height: 117%;
   text-transform: uppercase;
-  color: #fafafa;
+  color: black;
   padding: 32px;
+}
+body.dark .am-summary {
+  color: #fafafa;
+  background-color: transparent;
 }
 
 .am-photo {
@@ -39,7 +43,7 @@
   gap: 32px;
 
   max-width: 100%;
-  height: 608px;
+  /* height: 608px; */
 
   margin-bottom: 96px;
 }
@@ -64,17 +68,6 @@
   height: 72px;
   /* border: 1px solid rgba(250, 250, 250, 0.2); */
 }
-/* .am-aboutme-description {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  flex-direction: column;
-  gap: 32px;
-  margin: 48px;
-  max-width: 612px;
-  height: 320px;
-  margin-left: auto;
-} */
 .aboutme-list {
   display: flex;
   /* align-items: flex-end; */
@@ -91,22 +84,8 @@
 .aboutme-text {
   font: 500 16px / 1.5 'Inter Tight', sans-serif;
   letter-spacing: -0.02em;
-  color: #fafafa;
-}
-.am-skills {
-  max-width: 100%;
-}
-.am-skills > div.swiper-slide {
-  max-width: 200px;
-  height: 200px;
-  border-radius: 100%;
-  border: 1px solid rgba(250, 250, 250, 0.2);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-div.swiper-slide:hover {
-  background-color: #ed3b44;
+  /* color: #fafafa; */
+  color: black;
 }
 
 .ac {
@@ -123,8 +102,6 @@ div.swiper-slide:hover {
   padding: 0;
 }
 .ac .ac-trigger {
-  /* font: bold 16px 'Arial', sans-serif;
-  color: #111; */
   text-align: left;
   width: 100%;
   padding: 8px 32px 8px 8px;
@@ -136,13 +113,16 @@ div.swiper-slide:hover {
   text-decoration: none;
   margin: 0;
   border: 0;
-  color: rgba(250, 250, 250, 0.4);
+  /* color: rgba(250, 250, 250, 0.4); */
+  color: #8a8a8a;
   height: 72px;
   text-transform: uppercase;
   display: flex;
   justify-content: space-between;
 }
-
+body.dark .ac .ac-trigger {
+  color: rgba(250, 250, 250, 0.4);
+}
 .ac .ac-trigger:focus {
   color: #8a8a8a;
 }
@@ -152,8 +132,6 @@ div.swiper-slide:hover {
   transition-timing-function: ease;
 }
 .ac .ac-panel .ac-text {
-  /* font: 15px/24px 'Arial', sans-serif;
-  color: #111; */
   padding: 8px;
   margin: 0;
   text-align: right;
@@ -165,7 +143,12 @@ padding: 10px;
 width: 40px;
 height: 40px;
 margin-left: auto;
+transform: rotate(0);
+}
 
+.ac-icon-active {
+  transform: rotate(180deg);
+  transition: all 0.5s ease-in;
 }
 .ac.js-enabled .ac-panel {
   visibility: hidden;

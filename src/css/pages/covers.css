@@ -53,6 +53,18 @@
   transform: rotate(16deg);
 }
 
+
+.marquee__line {
+  background-color: #ffdc00;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(100% / 3);
+  height: 96%;
+  white-space: nowrap;
+}
+
 .animate-block {
   animation-name: marqueeLine;
   animation-duration: 25s;
@@ -74,30 +86,21 @@
   }
   100% {
     transform: translateX(0);
-
   }
-
 }
-
-
-/*!*Основные стили*!*/
 
 
 /*Медиа запросы*/
 @media screen and (max-width: 374.98px) {
-
 }
 
 @media screen and (min-width: 375px) {
-
 }
 
 @media screen and (min-width: 768px) {
-
 }
 
 @media screen and (min-width: 1440px) {
-
 }
 body.dark .arrows_cover svg{
 color: white;

@@ -1,0 +1,6 @@
+.skills-button {
+  color:var(--white-color);
+  padding: 65px 56px;
+  border-radius: 50%;
+  border: 1px solid var(--light-black-color);
+}

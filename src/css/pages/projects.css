@@ -1,19 +1,109 @@
 /*Основные стили*/
+.projects {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+.projects-title {
+  /* font-family: var(--font-family); */
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: rgba(250, 250, 250, 0.4);
+}
+.projects-top-section {
+  margin-top: 32px;
+  height: 417px;
+  background-color: #fafafa;
+  border-radius: 24px 24px 0 0;
+  padding: 32px;
+}
+.projects-technologies-list {
+  display: flex;
+  justify-content: start;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  align-items: flex-start;
+  gap: 10px;
+}
+.projects-technologies-list-item {
+  color: black;
+  font-weight: 500;
+  font-size: 16px;
+  letter-spacing: -0.02em;
+  border: 1px solid rgba(28, 29, 32, 0.2);
+  border-radius: 60px;
+  padding: 13px 18px;
+}
+.projects-text {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17;
+  letter-spacing: -0.03em;
+  color: hsl(225, 7%, 12%);
+  margin-top: 72px;
+  /* margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto; */
+}
+.projects-btn {
+  border-radius: 60px;
+  background-color: #ed3b44;
+  color: #fafafa;
+  font-weight: 500;
+  font-size: 16px;
+  max-width: 141px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  margin: 32px 0 0 0;
+  padding: 13px 0;
+}
 
+.projects-arrows-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.arrows-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 60px;
+  padding: 14px;
+  width: 52px;
+  height: 52px;
+  background-color: transparent;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+/* .left-btn {
+  border: 1px solid rgba(250, 250, 250, 0.2);
+}
+
+.right-btn {
+  border: 1px solid rgba(250, 250, 250, 0.5);
+} */
+
+.btn-icon {
+  width: 24px;
+  height: 24px;
+  fill: 3B3B3B 100%;
+}
 
 /*Медиа запросы*/
 @media screen and (max-width: 374.98px) {
-
 }
 
 @media screen and (min-width: 375px) {
-
 }
 
 @media screen and (min-width: 768px) {
-
 }
 
 @media screen and (min-width: 1440px) {
-
 }

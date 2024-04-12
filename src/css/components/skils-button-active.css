@@ -1,0 +1,4 @@
+.skills-button-active {
+  background-color: var(--red-color);
+  border: none;
+}

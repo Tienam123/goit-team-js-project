@@ -1,0 +1,12 @@
+.modal-backdrop {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.41);
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 5;
+}
+.modal-backdrop-hidden{
+  display: none;
+}

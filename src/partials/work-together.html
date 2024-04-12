@@ -1,8 +1,47 @@
-<section class="work-together">
-  <div class="container">
+<section class="work-together" id="work-together-section">
+  <div class="work-together-div container">
+<div class="work-together-div-title">
+  <img class="work-together-img" srcset="../img/work-together/image.png 1x, ../img/work-together/image2x.png  2x" 
+  src="../img/work-together/image.png "
+  width="44" 
+  height="44"
+  alt="jefferson">
+    <h2 class="work-together-title">Let's <span class="work-together-title work-together-span">work</span></h2>
+</div>
+    <h3 class="work-together-title work-together-title-second">together</h3>
 
+<div class="work-together-form-and-button">
+  <div class="work-together-form-div">
+    <form class="work-together-form">
+    <div class="work-together-div-for-inputs">
+      <input class="work-together-input work-together-input-decor-el" id="user-email" name="user-email" type="text" placeholder="clients@gmail.com" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required>
+      <input class="work-together-input work-together-input-tel" id="user-comments" name="user-comments" type="text" placeholder="comments" pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$" required>
+    </div> 
+    </form>
+  </div>
+  <button class="skills-button skils-button-active" type="submit" id="sendBtn">Send</button>
+</div>
+<div class="work-together-contacts-div">
+  <ul class="work-together-ul">
+    <li class="work-together-list"><a class="work-together-link work-together-mail" href="mailto:lloydjefferson@gmail.com">lloydjefferson@gmail.com</a></li>
+    <li class="work-together-list"><a class="work-together-link work-together-tel" href="tel:+3801111111111">+380 11 1111 11 11</a></li>
+  </ul>
+</div>
   </div>
 </section>
+<div class="modal-overlay modal-overlay-is-open visually-hidden">
+  <div class="modal-window visually-hidden">
+    <button class="work-together-button-modale-window" type="button">
+      <svg class="work-together-icon" width="11" height="11">
+        <use href="../sprites/symbol-defs.svg#icon-close"></use>
+      </svg>
+    </button>
+    <div class="modal-window-div-for-text">
+      <h2 class="modal-window-title">Thant you for your interest of cooperation!</h2>
+      <p class="modal-window-paragraph">The manager will contact you shortly to discuss further details  and opportunities for cooperation. Please stay touch.</p>
+    </div>
+</div>
+</div>
 
 <!--Work together-->
 <!--Текст “Let’s work together" є заголовком секції.-->

@@ -1,19 +1,90 @@
-/*Основные стили*/
+.container {
+  margin: 0 auto;
+}
 
+body.dark .accordion-title h2 {
+  color: white;
+}
+body.dark .accordion-content {
+  color: white;
+}
+
+li.accordion {
+  margin-bottom: 0;
+}
+
+.accordion {
+  position: relative;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.accordion-title span {
+  position: absolute;
+  top: 40%;
+  right: 5px;
+}
+
+.accordion-content {
+  box-sizing: content-box;
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out 0.5s, visibility 0.1s ease-out 0.5s;
+  line-height: 24px;
+  letter-spacing: -0.02em;
+  }
+
+.accordion-content.active {
+  visibility: visible;
+  opacity: 1;
+  padding: 20px 20px 20px 0;
+  transition: max-height 0.5s ease-out, padding 0.5s ease-out, opacity 0.1s ease-out, visibility 0.1s ease-out;
+}
+
+.accordion-content + span svg {
+  transform: rotate(180deg);
+  transition: all 0.5s ease-in;
+}
+
+.accordion-content.active + span svg {
+  transform: rotate(0);
+}
 
 /*Медиа запросы*/
 @media screen and (max-width: 374.98px) {
+  /*Основные стили*/
+  .accordion-list {
+    display: block;
+  }
 
+  .accordion-title h2 {
+
+    cursor: pointer;
+  }
 }
+
 
 @media screen and (min-width: 375px) {
 
 }
 
 @media screen and (min-width: 768px) {
-
+.accordion-list {
+}
+  .accordion {
+    border: 1px solid var(--light-black-color);
+  }
 }
 
 @media screen and (min-width: 1440px) {
-
+  .accordion-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .accordion {
+    width: 50%;
+    border: 1px solid var(--light-black-color);
+  }
 }

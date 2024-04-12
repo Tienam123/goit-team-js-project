@@ -1,32 +1,58 @@
-body {
-  margin: 0;
+.covers {
 }
 
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
 .content {
   position: relative;
 }
-.marquee {
+.content::before {
+  z-index: 0;
+  content: "";
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color:rgba(237, 59, 68, 0.6);
+  border-radius: 50%;
+  filter: blur(172px);
   position: absolute;
-  right: -800px;
-  left: 0;
-  overflow: hidden;
-  font-family: 'Pridi', sans-serif;
-  font-weight: 600;
-  font-size: 34px;
-  text-transform: uppercase;
+  top: 300px;
+  left: 30px;
+}
+.content::after {
+  content: "а";
+  display: block;
+  width:50px;
+  height: 50px;
+  z-index: 0;
+  background-color:rgba(237, 59, 68, 0.6);
+  border-radius: 50%;
+  filter: blur(172px);
+  position: absolute;
+  top: 0;
+  left: 30%;
 }
 
+
+.marquee {
+  top: 0;
+  left: 0;
+  z-index: 10;
+  overflow: hidden;
+}
+.marquee__line {
+  flex-shrink: 0;
+  overflow: hidden;
+  height: 346px;
+  margin-right: 30px;
+  margin-bottom: 50px;
+  img {
+    height: 100%;
+  }
+}
 .marquee__inner {
   display: flex;
-  transform: rotate(12deg);
-  height: 400px;
-  margin-bottom: 20px;
+  transform: rotate(16deg);
 }
+
 
 .marquee__line {
   background-color: #ffdc00;
@@ -37,9 +63,12 @@ body {
   width: calc(100% / 3);
   height: 96%;
   white-space: nowrap;
+}
+
+.animate-block {
   animation-name: marqueeLine;
-  animation-duration: 20s;
-  animation-timing-function: linear;
+  animation-duration: 25s;
+  animation-timing-function: ease-in-out;
   animation-iteration-count: infinite;
 }
 
@@ -48,16 +77,18 @@ body {
     transform: translateX(0);
   }
 
-  50% {
-    transform: translateX(-180%);
+  35% {
+    transform: translateX(-55%);
   }
 
-  20% {
+  65% {
+    transform: translateX(55%);
+  }
+  100% {
     transform: translateX(0);
   }
 }
 
-/*Основные стили*/
 
 /*Медиа запросы*/
 @media screen and (max-width: 374.98px) {

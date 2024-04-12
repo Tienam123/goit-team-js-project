@@ -9,9 +9,6 @@ p {
   margin: 0;
 }
 
-p:last-child {
-  margin-bottom: 0;
-}
 
 ul {
   margin: 0;
@@ -28,10 +25,10 @@ button {
   cursor: pointer;
   border: none;
   appearance: none;
+  background-color: transparent;
 }
 
 img {
   display: block;
   max-width: 100%;
-  height: auto;
 }

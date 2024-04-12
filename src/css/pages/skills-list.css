@@ -1,0 +1,53 @@
+
+/*Основные стили*/
+.all-skills-list {
+  display: flex;
+}
+.container {
+}
+
+.container-skill-list {
+}
+
+
+.skill-list-name {
+  font-family: 'Inter Tight', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  line-height: 1.5;
+  letter-spacing: -0.02em;
+  color: #1c1d20;
+}
+.swiper-skills-list {
+  overflow: hidden;
+  position: relative;
+}
+.swiper-button-next {
+  position: absolute;
+  top: 10px;
+}
+.swiper-wrapper {
+}
+
+.swiper-slide {
+
+}
+
+.main-skill-list {
+}
+
+.skills-button {
+}
+
+.skill-list {
+}
+
+.skill-list-name {
+}
+
+.arrow-list {
+}
+
+.arrow-list-icons {
+}

@@ -6,9 +6,27 @@ import { Autoplay } from 'swiper/modules';
 const swiper = new Swiper('.swiper-review', {
   modules: [Navigation, Autoplay],
 
+  breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 1,
+      spaceBetween: 16
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 2,
+      spaceBetween: 16
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView: 4,
+      spaceBetween: 16
+    }
+  },
   navigation: {
     nextEl: '.swiper-button-next-review',
     prevEl: '.swiper-button-prev-review',
+  disabledClass:'swiper-button-disabled'
   },
 });
 const reviewsEl = document.querySelector('.reviews-cards');

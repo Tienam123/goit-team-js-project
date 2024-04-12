@@ -99,3 +99,10 @@
 @media screen and (min-width: 1440px) {
 
 }
+body.dark .arrows_cover svg{
+color: white;
+}
+
+body.light .arrows_cover svg{
+color: black;
+}

@@ -228,7 +228,7 @@ body.light .work-together-link:hover {
 }
 /* ============== МОДАЛЬНЕ ВІКНО =============== */
 .modal-window {
-  max-width: 492px;
+  max-width: 343px;
 }
 .work-together-button-modale-window {
   width: 24px;
@@ -241,8 +241,8 @@ body.light .work-together-link:hover {
   height: 12px;
 }
 .modal-window-div-for-text {
-  width: 364px;
-  height: auto;
+  width: 279px;
+  height: 148px;
 }
 
 /* ===================================== */
@@ -268,12 +268,18 @@ body.light .work-together-link:hover {
   .work-together-title-second {
     margin-top: 7px;
   }
-  .skills-button {
+  /* .skills-button {
     margin-left: 32px;
-  }
+  } */
   .work-together-form-and-button {
     display: flex;
     align-items: center;
+  }
+  .modal-window {
+    width: 492px;
+  }
+  .modal-window-div-for-text {
+    margin: 0 auto;
   }
 }
 

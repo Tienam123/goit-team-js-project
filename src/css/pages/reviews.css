@@ -160,7 +160,7 @@ body.light .arrows-box svg {
     gap: 16px;
   }
 }
-.swiper-button-next-review.swiper-button-disabled button {
+body.light .swiper-button-next-review.swiper-button-disabled button {
   border: 1px solid gray;
   color: gray;
 }
@@ -168,11 +168,31 @@ body.light .arrows-box svg {
 body.light .swiper-button-next-review.swiper-button-disabled svg {
   color: gray;
 }
-.swiper-button-prev-review.swiper-button-disabled button {
+
+body.light .swiper-button-prev-review.swiper-button-disabled button {
   border: 1px solid gray;
   color: gray;
 }
 
 body.light .swiper-button-prev-review.swiper-button-disabled svg {
   color: gray;
+}
+
+/*-======== Dark =====*/
+body.dark .swiper-button-next-review.swiper-button-disabled button {
+  border: 1px solid red;
+  color: gray;
+}
+
+body.dark .swiper-button-next-review.swiper-button-disabled svg {
+  color: red;
+}
+
+body.dark .swiper-button-prev-review.swiper-button-disabled button {
+  border: 1px solid red;
+  color: gray;
+}
+
+body.dark .swiper-button-prev-review.swiper-button-disabled svg {
+  color: red;
 }

@@ -5,17 +5,15 @@ import { Autoplay } from 'swiper/modules';
 
 const swiper = new Swiper('.swiper-review', {
   modules: [Navigation, Autoplay],
-  autoplay: {
-    delay: 2000,
-  },
-  slidesPerView: 1,
-  // Default parameters
+
   navigation: {
     nextEl: '.swiper-button-next-review',
     prevEl: '.swiper-button-prev-review',
   },
 });
+const reviewsEl = document.querySelector('.reviews-cards');
 console.log(swiper);
+console.log(reviewsEl);
 //=========================================================================
 async function getReviews() {
   const data = await getData();
@@ -25,7 +23,6 @@ async function getReviews() {
 getReviews();
 
 //=========================================================================
-const reviewsEl = document.querySelector('.reviews-card-list');
 
 function renderReviews(reviews) {
   const markup = reviews

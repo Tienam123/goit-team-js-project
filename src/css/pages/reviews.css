@@ -86,8 +86,6 @@ body.light .left-btn {
   border: 1px solid var(--light-black-color);
 }
 
-
-
 body.light .right-btn {
   border: 1px solid var(--hard-black-color);
 }
@@ -153,7 +151,7 @@ body.light .arrows-box svg {
 }
 .swiper-review {
   overflow: hidden;
-  padding: 10px;
+  padding: 10px 0;
 }
 @media screen and (min-width: 1440px) {
   .reviews-card-list {
@@ -162,7 +160,7 @@ body.light .arrows-box svg {
     gap: 16px;
   }
 }
-.swiper-button-next-review.swiper-button-disabled button{
+.swiper-button-next-review.swiper-button-disabled button {
   border: 1px solid gray;
   color: gray;
 }
@@ -170,7 +168,7 @@ body.light .arrows-box svg {
 body.light .swiper-button-next-review.swiper-button-disabled svg {
   color: gray;
 }
-.swiper-button-prev-review.swiper-button-disabled button{
+.swiper-button-prev-review.swiper-button-disabled button {
   border: 1px solid gray;
   color: gray;
 }

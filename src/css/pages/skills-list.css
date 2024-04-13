@@ -1,16 +1,25 @@
-
-/*Основные стили*/
-.all-skills-list {
-  display: flex;
-}
-.container {
+body.light .swiper-slide-active .skills-button,
+button:hover {
+  background-color: var(--red-color);
+  border: var(--red-color);
 }
 
-.container-skill-list {
+body.dark .swiper-slide-active .skills-button,
+button:hover {
+  background-color: var(--red-color);
+  border: var(--red-color);
+}
+.skills-arrow {
+  margin-top: 20px;
+  text-align: center;
 }
 
-
-.skill-list-name {
+.skills-button {
+  border: #1c1d20;
+  margin: 0;
+  padding: 0;
+  width: 120px;
+  height: 120px;
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -20,34 +29,95 @@
   color: #1c1d20;
 }
 .swiper-skills-list {
-  overflow: hidden;
-  position: relative;
-}
-.swiper-button-next {
-  position: absolute;
-  top: 10px;
-}
-.swiper-wrapper {
+  overflow: clip;
 }
 
-.swiper-slide {
-
+body.light .skills-button {
+  border: 1px solid #3b3b3b;
 }
 
-.main-skill-list {
+body.dark .skills-button {
+  border: 1px solid #3b3b3b;
+  color: #fff;
 }
 
-.skills-button {
+.skills-button:active,
+.skills-button:focus,
+.skills-button:hover {
+  background-color: var(--red-color);
+  border: var(--red-color);
 }
 
-.skill-list {
+.arrow-list-skill {
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border-radius: 50%;
+  border: 1px solid var(--light-black-color);
+  stroke-width: 2px;
+  stroke: #3b3b3b;
 }
 
-.skill-list-name {
+.arrow-list-skill:active {
+  color: var(--red-color);
+  border: 1px solid var(--red-color);
 }
 
-.arrow-list {
+/*Медиа запросы*/
+@media screen and (max-width: 374.98px) {
 }
 
-.arrow-list-icons {
+@media screen and (min-width: 375px) {
+}
+
+@media screen and (min-width: 768px) {
+  .arrow-list-skill {
+    padding: 5px;
+    width: 35px;
+    height: 35px;
+  }
+  .skills-arrow {
+    margin-top: 25px;
+  }
+  .swiper-box {
+    text-align: center;
+  }
+  .skills-button {
+    font-size: 20px;
+    width: 140px;
+    height: 140px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+   .arrow-list-skill {
+    padding: 5px;
+    width: 40px;
+    height: 40px;
+  }
+  .skills-arrow {
+  margin-top: 20px;
+    position: absolute;
+z-index: 10;
+    bottom: 35%;
+  right: 5%;
+  transform: translateX(-50%);
+  }
+
+  .swiper-wrapper {
+    max-width: 80%;
+    text-align: left;
+     margin: 0;
+
+  }
+  .skills-list {
+position: relative;
+  }
+ 
+
+  .skills-button {
+    width: 180px;
+    height: 180px;
+  }
 }

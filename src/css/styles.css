@@ -1,9 +1,5 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+
+
 @import url('modern-normalize/modern-normalize.css');
 @import url('./reset.css');
 @import url('./base-styles.css');
@@ -34,6 +30,9 @@
   line-height: 24px;
   font-weight: 400;
 
+
+  color: rgba(250, 250, 250, 0.6);
+  background-color: #1c1d20;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -41,11 +40,13 @@
   -webkit-text-size-adjust: 100%;
 
 
+  --main-color: #000000;
+
   --hard-black-color: #1C1D20;
   --medium-black-color: #242527;
   --light-black-color: #3B3B3B;
   --red-color: #ED3B44;
-  --white-color: #FAFAFA;
+  --white-color: #fafafa;
 
   --animation-hover: 250ms ease-in;
 }

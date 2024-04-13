@@ -1,28 +1,48 @@
-
-  <div class="container">
-    <a href="/"
-       class="logo-link">
-      <img src="./icons/logo.svg"
-           alt="">
-      <span>jefferson*</span>
-    </a>
+<div class="container header__wrapper">
+  <a class="header__logo" href="">
+    <img src="./icons/logo.svg"
+         alt="">
+    <span>jefferson*</span>
+  </a>
+  <div class="header-menu__body menu-hidden-mobile">
+    <button class="menu__button">Menu</button>
+    <nav class="header__menu menu ">
+      <button class="button__close ">
+        <svg width="30" height="30">
+          <use href="./sprites/symbol-defs.svg#icon-close"></use>
+        </svg>
+      </button>
+      <label class="theme-switcher"
+             for="switcher">
+        <input type="checkbox"
+               class="theme-switcher__checkbox"
+               id="switcher">
+        <span class="theme-switcher__switch"></span>
+      </label>
+      <ul class="menu__list menu-hidden-desktop">
+        <li class="menu__item">
+          <a href="#">About me</a>
+        </li>
+        <li class="menu__item">
+          <a href="#">Benefits</a>
+        </li>
+        <li class="menu__item">
+          <a href="#">Projects</a>
+        </li>
+        <li class="menu__item">
+          <a href="#">FAQ</a>
+        </li>
+      </ul>
+      <a class="header__buy-now-mobile" href="#">Order the Project</a>
+    </nav>
   </div>
+  <div class="header__actions">
 
-
-<!--В Header-і знаходиться logo, навігація по сайту та посилання "Order the project"-->
-
-<!--Logo складається з контентного зображення та напису-->
-
-<!--Навігація по сайту для планшетних і десктопних пристроїв має зʼявлятись і приховуватись по clickу на Menu, як на прикладі, і має бути реалізована якірними посиланнями, які ведуть до відповідних секцій сайту з застосуванням повільного скролу.-->
-
-<!--"Order the project" має перенаправляти користувача до секції Work together.-->
-
-<!--"Для мобільних пристроїв навігація по сайту має бути розміщена в меню, взаємодія з яким має бути реалізована за допомогою JS.-->
-
-<!--По clickу на кнопку-іконку з бургер-меню, меню має плавно зʼявитися і заповнити всю ширину та висоту в'юпорту пристрою користувача.-->
-
-<!--У разі clickу по елементу навігації, користувача слід перенаправити до відповідної секції сайту і закрити меню.-->
-
-<!--Меню також можна закрити по clickу на кнопку-іконку закриття."-->
-
-<!--Header має прозорий фон і має бути спозиціоновано через absolute поверх секції Hero.-->
+    <button class="header__menu-burger ">
+      <svg width="30" height="30">
+        <use href="./sprites/symbol-defs.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <a class="header__buy-now" href="#">Order the Project</a>
+  </div>
+</div>

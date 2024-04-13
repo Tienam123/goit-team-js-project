@@ -1,69 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <link rel="icon"
-        type="image/svg+xml"
-        href="/favicon.svg" />
-  <meta name="viewport"
-        content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Go it Project</title>
-  <link rel="stylesheet"
-        href="./css/styles.css" />
+  <link rel="stylesheet" href="./css/styles.css" />
+  <script src="https://kit.fontawesome.com/f0ab59e0d6.js" crossorigin="anonymous"></script>
 </head>
+
 <body class="light">
-<header>
-  <!--  Людмила Тверезовская -->
-  <load
-  ="partials/header.html" />
+<!--  Людмила Тверезовская -->
+<div class="wrapper">
+  <header>
+    <load="partials/header.html" />
+  </header>
 
-</header>
+  <main>
+    <load="partials/hero.html" />
 
-<main>
-  <load
-  ="partials/hero.html" />
-  <!-- Злагодух Дмитрий -->
-  <load
-  ="partials/about-me.html" />
-  <!--Жанна Ткачук-->
-  <load
-  ="partials/skills-list.html" />
+    <load="partials/about-me.html" />
+    <load="partials/skill-list.html" />
+
+    <load="partials/benefits.html" />
+
+    <load="partials/projects.html" />
+    <!--FAQ-->
+    <load="partials/faq.html" />
+
+    <!--  Владислав Гончар  -->
+    <load="partials/covers.html" />
 
 
-  <!--  Кордубан Анна-->
-  <load
-  ="partials/benefits.html" />
-  <!--Наталья Дорошко-->
-  <load
-  ="partials/projects.html" />
-  <!--Виктория Колесник-->
-  <load
-  ="partials/faq.html" />
+    <!-- Панфутова Елена -->
+    <load="partials/reviews.html" />
+  </main>
 
-  <!--  Владислав Гончар  -->
-    <label class="theme-switcher"
-           for="switcher">
-      <input type="checkbox"
-             class="theme-switcher__checkbox"
-             id="switcher">
-      <span class="theme-switcher__switch"></span>
-    </label>
-  <load
-  ="partials/covers.html" />
-
-  <!-- Панфутова Елена -->
-  <load
-  ="partials/reviews.html" />
-</main>
-
-<footer>
-  <!-- Анастасия Мегей -->
-  <load
-  ="partials/work-together.html" />
-</footer>
-<load
-="partials/modal.html" />
-<script type="module"
-        src="./main.js"></script>
+  <footer>
+    <!-- Анастасия Мегей -->
+    <load="partials/work-together.html" />
+  </footer>
+ <button class="scroll-to-up animate-scroll visually-hidden">
+   <svg class="icon icon-angle-double-up"><use href="./sprites/symbol-defs.svg#icon-angle-double-up"></use></svg>
+ </button>
+</div>
+<script type="module" src="./main.js"></script>
 </body>
-</html>

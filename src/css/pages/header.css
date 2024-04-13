@@ -305,7 +305,7 @@ body.dark .header__scrolled {
   }
   .theme-switcher {
     position: absolute;
-    top:0;
+    top:-35px;
     right:0;
     margin-right: 10px;
   }

@@ -1,22 +1,23 @@
 /*Основные стили*/
+
 .projects {
   margin-top: 32px;
-  margin-bottom: 32px;
+  margin-bottom: 64px;
 }
 .projects-title {
-  /* font-family: var(--font-family); */
   font-weight: 600;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: -0.02em;
   text-transform: uppercase;
-  color: rgba(250, 250, 250, 0.4);
+  color: var(--light-black-color);
 }
 .projects-top-section {
   margin-top: 32px;
-  height: 417px;
-  background-color: #fafafa;
+  max-height: 417px;
+  background-color: var(--white-color);
   border-radius: 24px 24px 0 0;
+  border: 1px solid rgba(28, 29, 32, 0.2);
   padding: 32px;
 }
 .projects-technologies-list {
@@ -28,7 +29,7 @@
   gap: 10px;
 }
 .projects-technologies-list-item {
-  color: black;
+  color: var(--hard-black-color);
   font-weight: 500;
   font-size: 16px;
   letter-spacing: -0.02em;
@@ -41,18 +42,20 @@
   font-size: 24px;
   line-height: 1.17;
   letter-spacing: -0.03em;
-  color: hsl(225, 7%, 12%);
+  color: var(--hard-black-color);
   margin-top: 72px;
   /* margin-bottom: auto;
   margin-left: auto;
   margin-right: auto; */
 }
+
 .projects-btn {
-  border-radius: 60px;
-  background-color: #ed3b44;
-  color: #fafafa;
+  color: var(--white-color);
   font-weight: 500;
   font-size: 16px;
+  border-radius: 60px;
+  background-color: var(--red-color);
+
   max-width: 141px;
   display: flex;
   justify-content: center;
@@ -61,49 +64,121 @@
   margin: 32px 0 0 0;
   padding: 13px 0;
 }
-
+/* =================bottom========================= */
+.projects-bottom-section {
+  /* margin-top: 32px; */
+  /* max-height: 395px; */
+  /* background-color: var(--medium-black-color);
+  border-radius: 0 0 24px 24px;
+  border: 1px solid rgba(28, 29, 32, 0.2); */
+  /* padding: 32px; */
+}
+.swiper-wrapper-projects {
+  background-color: var(--medium-black-color);
+  border-radius: 0 0 24px 24px;
+  border: 1px solid rgba(28, 29, 32, 0.2);
+  max-height: 395px;
+}
+.projects-img-item {
+  width: 311px;
+  height: 195px;
+}
+/* ==================================================== */
 .projects-arrows-box {
+  margin-top: 64px;
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 12px;
 }
-
 .arrows-btn {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 60px;
+  border: 1px solid var(--hard-black-color);
   padding: 14px;
   width: 52px;
   height: 52px;
   background-color: transparent;
-  border: 1px solid rgba(250, 250, 250, 0.2);
 }
-
-/* .left-btn {
-  border: 1px solid rgba(250, 250, 250, 0.2);
-}
-
-.right-btn {
-  border: 1px solid rgba(250, 250, 250, 0.5);
-} */
-
 .btn-icon {
   width: 24px;
   height: 24px;
-  fill: 3B3B3B 100%;
 }
 
+/* ========================================================================== */
 /*Медиа запросы*/
 @media screen and (max-width: 374.98px) {
 }
 
 @media screen and (min-width: 375px) {
+  .projects-top-section {
+    height: 417px;
+  }
+  .swiper-wrapper-projects {
+    height: 395px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .projects-text {
+    font-weight: 500;
+    font-size: 44px;
+    line-height: 1;
+    letter-spacing: -0.03em;
+    color: var(--hard-black-color);
+    /* margin-top: 72px; */
+    /* margin-bottom: auto;
+  margin-left: auto;
+  margin-right: auto; */
+  }
+  .projects-btn {
+    max-width: 177px;
+
+    padding: 18px 0;
+  }
+  .projects-img-item {
+    width: 614px;
+    height: 385px;
+  }
+  .projects-top-section {
+    height: 417px;
+  }
+  .swiper-wrapper-projects {
+    height: 395px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  .projects-sections {
+    display: flex;
+  }
+  .projects-top-section {
+    margin-top: 32px;
+    max-height: 417px;
+    background-color: var(--white-color);
+    border-radius: 24px 0 0 24px;
+    border: 1px solid rgba(28, 29, 32, 0.2);
+    padding: 32px;
+  }
+  .projects-bottom-section {
+    margin-top: 32px;
+    max-height: 395px;
+    /* background-color: var(--medium-black-color);
+    border-radius: 0 24px 24px 0;
+    border: 1px solid rgba(28, 29, 32, 0.2); */
+    padding: 32px;
+  }
+  .swiper-wrapper-projects {
+    background-color: var(--medium-black-color);
+    border-radius: 0 24px 24px 0;
+    border: 1px solid rgba(28, 29, 32, 0.2);
+  }
 }
+
+/* --hard-black-color: #1C1D20;
+  --medium-black-color: #242527;
+  --light-black-color: #3B3B3B;
+  --red-color: #ED3B44;
+  --white-color: #FAFAFA; */

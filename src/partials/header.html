@@ -1,81 +1,58 @@
-<!--В Header-і знаходиться logo, навігація по сайту та посилання "Order the project"-->
-
-<!--Logo складається з контентного зображення та напису-->
-
-<!--Навігація по сайту для планшетних і десктопних пристроїв має зʼявлятись і приховуватись по clickу на Menu, як на прикладі, і має бути реалізована якірними посиланнями, які ведуть до відповідних секцій сайту з застосуванням повільного скролу.-->
-
-<!--"Order the project" має перенаправляти користувача до секції Work together.-->
-
-<!--"Для мобільних пристроїв навігація по сайту має бути розміщена в меню, взаємодія з яким має бути реалізована за допомогою JS.-->
-
-<!--По clickу на кнопку-іконку з бургер-меню, меню має плавно зʼявитися і заповнити всю ширину та висоту в'юпорту пристрою користувача.-->
-
-<!--У разі clickу по елементу навігації, користувача слід перенаправити до відповідної секції сайту і закрити меню.-->
-
-<!--Меню також можна закрити по clickу на кнопку-іконку закриття."-->
-
-<!--Header має прозорий фон і має бути спозиціоновано через absolute поверх секції Hero.-->
 <header class="header-section" id="header-section-id">
   <div class="header container">
     <ul class="header-list">
       <li class="header-item">
         <div class="header__logo">
-          <div>
-            <img class="header_logo_img" src="../icons/logo.svg" alt="photo" />
+          <div class="logo__image">
+            <img
+              class="header_logo_pic"
+              sizes="(min-width: 375px) 343px, (min-width: 768px) 704px, (min-width: 1440px) 680px"
+              src="../img/image-header.jpg"
+              alt="photo"
+            />
           </div>
-          <!-- <a class="header_logo__text">jefferson*</a> -->
+          <a class="logo__text">jefferson*</a>
         </div>
       </li>
-      <li class="header-item nav-item header-item-two">
+      <li class="header-item nav-item header-item2">
         <div class="navigation__menu">
-          <p class="header-menu__title">Menu</p>
+          <p class="menu__title">Menu</p>
           <nav class="header__menu">
-            <ul class="header-menu__list">
-              <li>
-                <a href="#about-me-section-id">About me</a>
+            <ul class="menu__list">
+              <li class="list__item">
+                <a href="#about-me-section-id" class="item__link smooth-scroll"
+                  >About me</a
+                >
               </li>
-              <li>
-                <a href="#benefits-section-id">Benefits</a>
+              <li class="list__item">
+                <a href="#benefits-section-id" class="item__link smooth-scroll"
+                  >Benefits</a
+                >
               </li>
-              <li>
-                <a href="#projects-section-id">Projects</a>
+              <li class="list__item">
+                <a href="#projects-section-id" class="item__link smooth-scroll"
+                  >Projects</a
+                >
               </li>
-              <li>
-                <a href="#faq-section-id">FAQ</a>
+              <li class="list__item">
+                <a href="#faq-section-id" class="item__link smooth-scroll"
+                  >FAQ</a
+                >
               </li>
             </ul>
           </nav>
         </div>
       </li>
-      <li class="header-item header-item-next">
+      <li class="header-item header-item3">
         <a
           href="#work-together-section-id"
           class="navigation-link smooth-scroll"
           >Order the project</a
         >
       </li>
-      <li class="header-item header-item-four">
-        <!-- <svg class="burger" width="28" height="28">
-          <use
-            class="header-burger-use"
-            href="../sprites/symbol-defs.svg#icon-burger"
-          ></use>
-        </svg> -->
-        <svg
-          width="28"
-          height="28"
-          viewBox="0 0 24 12"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          style="width: 28px; height: 28px"
-        >
-          <path
-            d="M1.5 1.91666H22.5M1.5 10.0833H22.5"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
+      <li class="header-item header-item4">
+        <svg class="burger" width="28" height="28">
+          <use href="../sprites/sprite.svg#burger-menu"></use>
         </svg>
       </li>
     </ul>
@@ -83,7 +60,7 @@
 
   <div class="mobile-menu-header">
     <svg class="close-btn-header" width="28" height="28">
-      <use href="../sprites/symbol-defs.svg#icon-close"></use>
+      <use href="../sprites/sprite.svg#x"></use>
     </svg>
     <ul class="mobile-menu-header-list">
       <li class="mobile-menu-item">
@@ -113,7 +90,7 @@
         >
       </li>
     </ul>
-    <a href="#work-together-section-id" class="link-header-link smooth-scroll"
+    <a href="#work-together-section-id" class="link-work smooth-scroll"
       >Order the project</a
     >
   </div>

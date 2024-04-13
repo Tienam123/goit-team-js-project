@@ -1,19 +1,280 @@
-/*Основные стили*/
-
-
-/*Медиа запросы*/
-@media screen and (max-width: 374.98px) {
-
+:root {
+  --black: #1c1d20;
+  --dark-gray: #242527;
+  --medium-gray: #3b3b3b;
+  --white: #fafafa;
+  --green: #3cbc81;
+  --red: #ed3b44;
+  --red-hover: #e0373f;
 }
 
 @media screen and (min-width: 375px) {
+  .header-section.scrolled {
+    background: rgba(0, 0, 0, 0.55);
+    -webkit-backdrop-filter: blur(3px);
+    backdrop-filter: blur(3px);
+  }
+  .header-burger-use {
+    width: 28px;
+    height: 28px;
+    color: var(--white);
+  }
+  .header-section.show {
+    height: 164px;
+  }
+  .header-section {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    height: 144px;
+  }
 
+  .header {
+    padding-top: 32px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .header_logo_img {
+    border-radius: 18px;
+    width: 172px;
+    height: 80px;
+
+    color: rgba(250, 250, 250, 1);
+
+    font-family: 'Inter Tight';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.02em;
+  }
+  .header__logo {
+    display: flex;
+    gap: 8px;
+    cursor: pointer;
+  }
+
+  .header-list {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+  }
+
+  .header-item-two,
+  .header-item-next {
+    display: none;
+  }
+
+  .link-header-link {
+    width: 164px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    background: var(--red);
+    color: var(--white);
+    font-family: 'Inter Tight';
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.02em;
+    transition: background-color 0.3s ease-in-out;
+  }
+  .link-header-link:focus,
+  .link-header-link:hover {
+    background-color: var(--red-hover);
+  }
+  .mobile-menu-header {
+    background-color: linear-gradient(
+      90.11deg,
+      #1c1d20 49.69%,
+      #69292d 67.71%,
+      #ed3b44 99.91%
+    );
+
+    background-position: top left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    z-index: 9999;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(105%);
+    transition: transform 0.5s ease-in-out;
+  }
+  @media screen and (min-resolution: 192dpi) and (min-width: 375px),
+    screen and (min-resolution: 2dppx) and (min-width: 375px),
+    screen and (min-device-pixel-ratio: 2) and (min-width: 375px) {
+    .mobile-menu-header {
+      /* background-image: url('../img/mobil/bg/m-hero-menu@2x.png');
+      background-position: top left;
+      background-size: cover;
+      background-repeat: no-repeat; */
+
+      background-color: linear-gradient(
+        90.11deg,
+        #1c1d20 49.69%,
+        #69292d 67.71%,
+        #ed3b44 99.91%
+      );
+    }
+  }
+  .mobile-menu-header.showMenu {
+    transform: translateX(0);
+  }
+  .mobile-menu-header.closeMenu {
+    transform: translateX(100%);
+  }
+  .close-btn-header {
+    position: absolute;
+    top: 32px;
+    right: 16px;
+  }
+  .mobile-menu-header-list {
+    position: absolute;
+    top: 302px;
+  }
+  .link-header-link {
+    position: absolute;
+    bottom: 64px;
+  }
+  .mobile-menu-item-link {
+    color: var(--white);
+    font-family: 'Inter Tight';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+    transition: color 0.3s ease-in-out;
+  }
+  .mobile-menu-item-link:hover,
+  .mobile-menu-item-link:focus {
+    color: var(--red);
+  }
+  .mobile-menu-header-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 12px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .mobile-menu-header {
+    display: none;
+  }
+  .header-item-two,
+  .header-item-next {
+    display: block;
+  }
 
-}
+  .header-item-four {
+    display: none;
+  }
 
-@media screen and (min-width: 1440px) {
+  .header-menu__title {
+    color: var(--white);
+    font-family: 'Inter Tight';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.02em;
+    text-decoration-line: underline;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+  }
+  .header-menu__title:hover,
+  .header-menu__title:focus {
+    color: var(--red);
+  }
 
+  .navigation-link {
+    color: var(--white);
+    font-family: 'Inter Tight';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.02em;
+    display: flex;
+    width: 163px;
+    height: 55px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    background-color: var(--red);
+    transition: background-color 0.3s ease-in-out;
+  }
+  .navigation-link:hover,
+  .navigation-link:focus {
+    background-color: var(--red-hover);
+  }
+  .header-menu__list {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    align-items: center;
+    justify-content: center;
+    width: 67px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    height: 91px;
+  }
+  .item__link {
+    color: var(--white);
+    font-family: 'Inter Tight';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.02em;
+    transition: color 0.3s ease-in-out;
+  }
+  .item__link:hover,
+  .item__link:focus {
+    color: var(--red);
+  }
+
+  .header-menu__list {
+    opacity: 0;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+  }
+
+  .header-menu__list.show {
+    overflow: visible;
+    opacity: 1;
+    height: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+  }
+
+  .nav-item {
+    position: relative;
+  }
+
+  .header__menu {
+    position: absolute;
+    z-index: 99;
+    top: 80px;
+    left: -10px;
+  }
 }

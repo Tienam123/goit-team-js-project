@@ -1,5 +1,7 @@
+import iziToast from 'izitoast';
+import 'izitoast/dist/css/iziToast.min.css';
 import { postData } from './api';
-const buttonEl = document.querySelector('.skills-button');
+const buttonEl = document.querySelector('button#sendBtn');
 const inputEmail = document.querySelector('input#user-email');
 const inputComments = document.querySelector('input#user-comments');
 
@@ -10,8 +12,23 @@ buttonEl.addEventListener('click', async e => {
   e.preventDefault();
   emailInput = inputEmail.value;
   commentsInput = inputComments.value;
-  postData(emailInput, commentsInput);
-  document.querySelector('form.work-together-form').reset();
+  const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
+  if (!pattern.test(emailInput)) {
+    iziToast.error({
+      title: 'Error',
+      message: 'Invalid email, try again',
+      position: 'bottomCenter',
+    });
+  } else {
+    postData(emailInput, commentsInput);
+    openModal();
+    document.querySelector('form.work-together-form').reset();
+    iziToast.success({
+      title: 'OK',
+      color: 'green',
+      message: 'Success!',
+    });
+  }
 });
 
 const modalOverlay = document.querySelector('.modal-overlay');
@@ -20,7 +37,7 @@ const closeModal = document.querySelector(
   '.work-together-button-modale-window'
 );
 // open modal
-buttonEl.addEventListener('click', openModal);
+// buttonEl.addEventListener('click', openModal);
 function openModal() {
   modalWindow.classList.remove('visually-hidden');
   modalOverlay.classList.remove('visually-hidden');
@@ -29,22 +46,4 @@ function openModal() {
 closeModal.addEventListener('click', () => {
   modalWindow.classList.add('visually-hidden');
   modalOverlay.classList.add('visually-hidden');
-});
-// show mistakes if write incorrect information in inputs
-document.getElementById('user-email').addEventListener('input', function () {
-  const email = this.value;
-  const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-  if (!pattern.test(email)) {
-    iziToast.error({
-      title: 'Error',
-      message: 'Invalid email, try again',
-      position: 'topRight',
-    });
-  } else {
-    iziToast.success({
-      title: 'OK',
-      color: 'green',
-      message: 'Success!',
-    });
-  }
 });

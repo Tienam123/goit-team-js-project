@@ -1,20 +1,14 @@
-header {
-  position: absolute;
-}
-.swiper {
-  height: 92vh;
-}
+
 .swiper-hero {
-  height: 92vh;
+  height: 100vh;
 }
 .hero {
   position: relative;
-  height: 92vh;
 }
 
 .swiper-hero-slide img {
   width: 100%;
-  height: 92vh;
+  height: 100%;
 }
 
 .hero__links {

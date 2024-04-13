@@ -9,7 +9,7 @@
   border-radius: 24px;
   max-width: 100%;
   height: 500px;
-  background-color: #242527;
+  background-color: transparent;
 
   font: 500 24px / 1.17 'Inter Tight', sans-serif;
   letter-spacing: -0.03em;
@@ -33,7 +33,7 @@ body.dark .am-summary {
   color: #ed3b44;
 }
 #websites {
-  color: rgba(250, 250, 250, 0.4);
+  color: grey;
 }
 .am-main {
   display: flex;
@@ -79,13 +79,15 @@ body.dark .am-summary {
   margin-right: auto;
   /* margin: 48px; */
   /* max-width: 612px; */
-
 }
 .aboutme-text {
   font: 500 16px / 1.5 'Inter Tight', sans-serif;
   letter-spacing: -0.02em;
   /* color: #fafafa; */
   color: black;
+}
+body.dark .aboutme-text {
+  color: #fafafa;
 }
 
 .ac {
@@ -111,10 +113,9 @@ body.dark .am-summary {
   transition: color 0.25s ease;
   position: relative;
   text-decoration: none;
-  margin: 0;
   border: 0;
   /* color: rgba(250, 250, 250, 0.4); */
-  color: #8a8a8a;
+  color: black;
   height: 72px;
   text-transform: uppercase;
   display: flex;
@@ -130,6 +131,7 @@ body.dark .ac .ac-trigger {
   overflow: hidden;
   transition-property: height, visibility;
   transition-timing-function: ease;
+  transition: all 1s ease-in;
 }
 .ac .ac-panel .ac-text {
   padding: 8px;
@@ -138,25 +140,27 @@ body.dark .ac .ac-trigger {
 }
 .ac-icon {
   border: 1px solid rgba(250, 250, 250, 0.2);
-border-radius: 100px;
-padding: 10px;
-width: 40px;
-height: 40px;
-margin-left: auto;
-transform: rotate(0);
+  border-radius: 100px;
+  padding: 10px;
+  width: 40px;
+  height: 40px;
+  margin-left: auto;
+  transform: rotate(0);
+  transition: all 0.1s ease-in;
 }
 
 .ac-icon-active {
   transform: rotate(180deg);
-  transition: all 0.5s ease-in;
+  transition: all 0.1s ease-in;
 }
 .ac.js-enabled .ac-panel {
   visibility: hidden;
+  transition: all 1s ease-in;
 }
 .ac.is-active .ac-panel {
   visibility: visible;
+  transition: all 1s ease-in;
 }
-
 
 /*Медиа запросы*/
 @media screen and (max-width: 374.98px) {
@@ -167,36 +171,35 @@ transform: rotate(0);
 
 @media screen and (min-width: 768px) {
   .am-photo {
-    height:auto;
+    height: auto;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .am-headline {
-      margin-bottom: 96px;
-      flex-direction: row;
-    }
-.am-summary {
-  height: 700px;
-  font: 500 38px / 1.05263 'Inter Tight', sans-serif;
-  line-height: 105%;
-  padding: 64px;
-  max-width: 680px;
-}
-        .am-photo {
-          max-width: 680px;
-          height: 700px;
-        }
+    margin-bottom: 96px;
+    flex-direction: row;
+  }
+  .am-summary {
+    height: 700px;
+    font: 500 38px / 1.05263 'Inter Tight', sans-serif;
+    line-height: 105%;
+    padding: 64px;
+    max-width: 680px;
+  }
+  .am-photo {
+    max-width: 680px;
+    height: 700px;
+  }
   .aboutme-list {
-      display: flex;
-      /* align-items: flex-end; */
-      justify-content: flex-start;
-      flex-direction: column;
-      gap: 32px;
-      width: 50%;
-      margin-left: auto;
-      margin-right: 0;
-      padding: 48px;
-    }
-
+    display: flex;
+    /* align-items: flex-end; */
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 32px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: 0;
+    padding: 48px;
+  }
 }

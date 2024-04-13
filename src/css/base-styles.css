@@ -1,3 +1,4 @@
+
 .container {
   margin: 0 auto;
   padding: 0 15px;
@@ -5,7 +6,9 @@
 .swiper-hero {
   overflow: clip;
 }
-
+.lock {
+  overflow: hidden;
+}
 .visually-hidden {
   position: absolute;
   width: 1px;

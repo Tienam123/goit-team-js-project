@@ -1,8 +1,46 @@
+.swiper-skills-list {
+  overflow: clip;
+  position: relative;
+}
+
+.swiper-skill-list-next {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid gray;
+  border-radius: 50%;
+}
+.swiper-slide.swiper-skills-slide.swiper-slide-active button {
+  background-color: var(--red-color);
+}
+
+body.light .swiper-slide.swiper-skills-slide.swiper-slide-active button {
+border: 1px solid var(--red-color);
+  color: white;
+}
+body.light .swiper-slide.swiper-skills-slide button {
+  border: 1px solid inherit;
+  color: inherit;
+}
+
+body.dark .swiper-slide.swiper-skills-slide button {
+  border: 1px solid inherit;
+  color: inherit;
+}
+body.dark .swiper-slide.swiper-skills-slide.swiper-slide-active button {
+  border: 1px solid var(--red-color);
+  color: white;
+}
+
+.swiper-skills-list__wrapper {
+}
+
+.swiper-slide {
+
+}
 
 /*Основные стили*/
-.all-skills-list {
-  display: flex;
-}
+
 .container {
 }
 
@@ -14,40 +52,58 @@
   font-family: 'Inter Tight', sans-serif;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
   line-height: 1.5;
   letter-spacing: -0.02em;
   color: #1c1d20;
 }
-.swiper-skills-list {
-  overflow: hidden;
-  position: relative;
-}
-.swiper-button-next {
-  position: absolute;
-  top: 10px;
-}
-.swiper-wrapper {
-}
 
-.swiper-slide {
+.swiper-skills-slide {
 
 }
 
-.main-skill-list {
+.swiper-skills-slide  button{
+  border: 1px solid gray;
+  border-radius: 50%;
 }
 
-.skills-button {
+@media screen and (max-width: 767.98px) {
+  .swiper-skill-list-next {
+    height: 50px;
+    width: 50px;
+    margin-left: 40%;
+    margin-top: 20px;
+  }
+  .swiper-skills-slide  button{
+    border: 1px solid gray;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+  }
 }
 
-.skill-list {
+@media screen and (min-width: 768px) {
+  .swiper-skill-list-next {
+    height: 50px;
+    width: 50px;
+    margin-top: 20px;
+    position: absolute;
+    right: 0;
+    bottom: 35%;
+    z-index: 5;
+  }
+  .swiper-skills-slide  button{
+    border: 1px solid gray;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
 }
 
-.skill-list-name {
-}
-
-.arrow-list {
-}
-
-.arrow-list-icons {
+@media screen and (min-width: 1440px) {
+  .swiper-skills-slide  button{
+    border: 1px solid gray;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+  }
 }

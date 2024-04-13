@@ -27,7 +27,6 @@ li.accordion {
 .title-section-faq {
   font-weight: 600;
   letter-spacing: -0.02em;
-  padding-left: 20px;
   margin-bottom: 10px;
 }
 
@@ -127,6 +126,7 @@ li.accordion {
   }
 
   .accordion:nth-child(1) {
+    padding-left: 0;
     border-top: 1px solid var(--light-black-color);
     border-right: 1px solid var(--light-black-color);
     border-bottom: 1px solid var(--light-black-color);
@@ -141,6 +141,7 @@ li.accordion {
   }
 
   .accordion:nth-child(3) {
+    padding-left: 0;
     border-top: 1px solid var(--light-black-color);
     border-right: 1px solid var(--light-black-color);
     border-bottom: 1px solid var(--light-black-color);
@@ -155,6 +156,7 @@ li.accordion {
   }
 
   .accordion:nth-child(5) {
+    padding-left: 0;
     border-top: 1px solid var(--light-black-color);
     border-right: 1px solid var(--light-black-color);
     border-bottom: 1px solid var(--light-black-color);

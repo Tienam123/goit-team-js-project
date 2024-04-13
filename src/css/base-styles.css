@@ -97,3 +97,7 @@ body.light .scroll-to-up{
     transform: scale(1);
   }
 }
+
+.screen-blocked {
+  overflow: hidden;
+}

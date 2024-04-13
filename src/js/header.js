@@ -8,6 +8,7 @@ const themeButton = document.querySelector('.header-menu__body #switcher');
 const container1 = document.querySelector('.header__actions');
 const header = document.querySelector('header');
 const mql = window.matchMedia('(max-width:768px)');
+const scrollToUpBtn =  document.querySelector('.scroll-to-up');
 function screenChange(e) {
   if (e.matches) {
     menuList.classList.add('menu-hidden-desktop')
@@ -22,10 +23,12 @@ menuButton.addEventListener('click',()=> {
 
 burgerButton.addEventListener('click',()=> {
   mobileMenu.classList.remove('menu-hidden-mobile')
+  document.body.classList.add('screen-blocked')
 })
 
 closeButton.addEventListener('click',()=> {
   mobileMenu.classList.add('menu-hidden-mobile')
+  document.body.classList.remove('screen-blocked')
 })
 
 menuLinks.forEach(el => {
@@ -39,9 +42,11 @@ menuLinks.forEach(el => {
 window.addEventListener('scroll',(event)=>{
   if (window.scrollY > 250) {
     header.classList.add('header__scrolled')
+    scrollToUpBtn.classList.remove('visually-hidden')
     header.classList.remove('header_on-top')
   } else {
     header.classList.remove('header__scrolled')
+    scrollToUpBtn.classList.add('visually-hidden')
     header.classList.add('header_on-top')
   }
 })

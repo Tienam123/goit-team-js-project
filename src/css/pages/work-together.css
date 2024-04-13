@@ -94,7 +94,7 @@ body.light .work-together-link:hover {
 }
 body.dark .work-together-button {
   border-radius: 100%;
-  border: 1px solid var(--hard-black-color);
+  border: 1px solid var(--light-black-color);
 }
 .work-together-button:hover {
   background: var(--red-color);

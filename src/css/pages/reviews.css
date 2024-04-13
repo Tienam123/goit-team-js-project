@@ -17,9 +17,9 @@
   margin-bottom: 32px;
 }
 
-.reviews-card {
-  margin-bottom: 32px;
-}
+/*.reviews-card {
+   margin-bottom: 32px;
+}*/
 
 .reviews-card-list {
   display: flex;
@@ -64,7 +64,7 @@ body.light .reviews-card-item {
 }
 
 .arrows-box {
-  margin-top: 20px;
+  margin-top: 32px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -94,13 +94,17 @@ body.light .right-btn {
   border: 1px solid rgba(250, 250, 250, 0.5);
 }
 
+.left-btn {
+  border: 1px solid rgba(250, 250, 250, 0.5);
+}
+
 .btn-icon {
   width: 24px;
   height: 24px;
 }
 
 body.dark .arrows-box svg {
-  color: white;
+  color: var(--white-color);
 }
 
 body.light .arrows-box svg {
@@ -109,14 +113,6 @@ body.light .arrows-box svg {
 .swiper-button-next-review {
   z-index: 10;
 }
-
-/*.left-btn-icon {
-  fill: var(--light-black-color);
-}
-
-.right-btn-icon {
-  fill: var(--white-color);
-}*/
 
 /*Медиа запросы*/
 @media screen and (max-width: 374.98px) {
@@ -147,12 +143,14 @@ body.light .arrows-box svg {
   .btn-icon {
     width: 32px;
     height: 32px;
+    flex-shrink: 0;
   }
 }
 .swiper-review {
   overflow: clip;
   padding: 10px 0;
 }
+
 @media screen and (min-width: 1440px) {
   .reviews-card-list {
     justify-content: center;
@@ -180,19 +178,19 @@ body.light .swiper-button-prev-review.swiper-button-disabled svg {
 
 /*-======== Dark =====*/
 body.dark .swiper-button-next-review.swiper-button-disabled button {
-  border: 1px solid red;
-  color: gray;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  color: var(--light-black-color);
 }
 
 body.dark .swiper-button-next-review.swiper-button-disabled svg {
-  color: red;
+  color: var(--light-black-color);
 }
 
 body.dark .swiper-button-prev-review.swiper-button-disabled button {
-  border: 1px solid red;
-  color: gray;
+  border: 1px solid rgba(250, 250, 250, 0.2);
+  color: var(--light-black-color);
 }
 
 body.dark .swiper-button-prev-review.swiper-button-disabled svg {
-  color: red;
+  color: var(--light-black-color);
 }

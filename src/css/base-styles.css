@@ -64,7 +64,7 @@
   margin-left: auto;
   margin-right: 20px;
   position: fixed;
-  bottom: 50px;
+  bottom: 150px;
   right:  10px;
   z-index: 2000;
 }
@@ -72,7 +72,6 @@ body.dark .scroll-to-up{
 
 }
 body.light .scroll-to-up{
-  border: 1px solid  #7b7777;
   color: #7b7777;
 }
 .icon {
@@ -97,4 +96,8 @@ body.light .scroll-to-up{
   100% {
     transform: scale(1);
   }
+}
+
+.screen-blocked {
+  overflow: hidden;
 }

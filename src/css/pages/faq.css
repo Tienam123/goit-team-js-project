@@ -33,12 +33,15 @@ li.accordion {
 .accordion {
   position: relative;
   margin-bottom: 20px;
+  border-top: 1px solid var(--light-black-color);
+  border-bottom: 1px solid var(--light-black-color);
+}
+
+.accordion-title {
   padding-top: 30px;
   padding-right: 30px;
   padding-bottom: 20px;
   padding-left: 20px;
-  border-top: 1px solid var(--light-black-color);
-  border-bottom: 1px solid var(--light-black-color);
 }
 
 .accordion-title span {
@@ -102,6 +105,10 @@ li.accordion {
   .accordion-title h2 {
     cursor: pointer;
   }
+
+  .accordion-title span {
+    right: 0;
+  }
 }
 
 @media screen and (min-width: 375px) {
@@ -115,6 +122,7 @@ li.accordion {
     border-top: 1px solid var(--light-black-color);
   }
 }
+
 @media screen and (min-width: 1440px) {
   .accordion-list {
     display: flex;
@@ -122,7 +130,6 @@ li.accordion {
   }
   .accordion {
     width: 50%;
-    /*border: 1px solid var(--light-black-color);*/
   }
 
   .accordion:nth-child(1) {

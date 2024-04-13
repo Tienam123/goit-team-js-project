@@ -20,7 +20,7 @@ body.light .benefits-title{
     margin-bottom: 32px;
 }
 .benefits-wrapper{
-    max-width: 344px;
+    
     margin: 0 auto;
 }
 .benefits-title{
@@ -49,7 +49,6 @@ font-weight: 500;
 font-size: 16px;
 line-height: 1.5;
 letter-spacing: -0.02em;
-
 }
 .benefit-icon-box{
     border-radius: 10px;
@@ -71,6 +70,7 @@ margin-bottom: 64px;
     border-radius: 20px;
 padding: 24px;
 max-width: 100%;
+
 background: #242527;
 }
 
@@ -81,6 +81,7 @@ font-size: 16px;
 letter-spacing: -0.02em;
 color: #FAFAFA;
 border: 1px solid #ED3B44;
+border: 1px solid var(--red-color);
 border-radius: 60px;
  margin-top: 32px;
  display: flex;
@@ -96,11 +97,24 @@ transition: 250ms ease-in;
     background-color: #ED3B44;
 }
 
+=======
+transition: all var(--animation-hover);
+}
+
+.benefit-link:hover,
+.benefit-link:focus{
+    background-color: var(--red-color);
+}
 
 /*Медиа запросы*/
 @media screen and (max-width: 374.98px) {
 
-    
+    .benefits-wrapper{
+      max-width: 288px; 
+    }
+    .benefit-text{
+        max-width: 240px;
+     }
 }
 
 @media screen and (min-width: 375px) {

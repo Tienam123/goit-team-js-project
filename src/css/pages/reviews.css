@@ -17,9 +17,9 @@
   margin-bottom: 32px;
 }
 
-.reviews-card {
-  /* margin-bottom: 32px;*/
-}
+/*.reviews-card {
+   margin-bottom: 32px;
+}*/
 
 .reviews-card-list {
   display: flex;
@@ -147,7 +147,6 @@ body.light .arrows-box svg {
   }
 }
 .swiper-review {
-
   overflow: clip;
   padding: 10px 0;
 }

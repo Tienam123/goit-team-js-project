@@ -1,120 +1,48 @@
-<!--В Header-і знаходиться logo, навігація по сайту та посилання "Order the project"-->
-
-<!--Logo складається з контентного зображення та напису-->
-
-<!--Навігація по сайту для планшетних і десктопних пристроїв має зʼявлятись і приховуватись по clickу на Menu, як на прикладі, і має бути реалізована якірними посиланнями, які ведуть до відповідних секцій сайту з застосуванням повільного скролу.-->
-
-<!--"Order the project" має перенаправляти користувача до секції Work together.-->
-
-<!--"Для мобільних пристроїв навігація по сайту має бути розміщена в меню, взаємодія з яким має бути реалізована за допомогою JS.-->
-
-<!--По clickу на кнопку-іконку з бургер-меню, меню має плавно зʼявитися і заповнити всю ширину та висоту в'юпорту пристрою користувача.-->
-
-<!--У разі clickу по елементу навігації, користувача слід перенаправити до відповідної секції сайту і закрити меню.-->
-
-<!--Меню також можна закрити по clickу на кнопку-іконку закриття."-->
-
-<!--Header має прозорий фон і має бути спозиціоновано через absolute поверх секції Hero.-->
-<header class="header-section" id="header-section-id">
-  <div class="header container">
-    <ul class="header-list">
-      <li class="header-item">
-        <div class="header__logo">
-          <div>
-            <img class="header_logo_img" src="../icons/logo.svg" alt="photo" />
-          </div>
-          <!-- <a class="header_logo__text">jefferson*</a> -->
-        </div>
-      </li>
-      <li class="header-item nav-item header-item-two">
-        <div class="navigation__menu">
-          <p class="header-menu__title">Menu</p>
-          <nav class="header__menu">
-            <ul class="header-menu__list">
-              <li>
-                <a href="#about-me-section-id">About me</a>
-              </li>
-              <li>
-                <a href="#benefits-section-id">Benefits</a>
-              </li>
-              <li>
-                <a href="#projects-section-id">Projects</a>
-              </li>
-              <li>
-                <a href="#faq-section-id">FAQ</a>
-              </li>
-            </ul>
-          </nav>
-        </div>
-      </li>
-      <li class="header-item header-item-next">
-        <a
-          href="#work-together-section-id"
-          class="navigation-link smooth-scroll"
-          >Order the project</a
-        >
-      </li>
-      <li class="header-item header-item-four">
-        <!-- <svg class="burger" width="28" height="28">
-          <use
-            class="header-burger-use"
-            href="../sprites/symbol-defs.svg#icon-burger"
-          ></use>
-        </svg> -->
-        <svg
-          width="28"
-          height="28"
-          viewBox="0 0 24 12"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          style="width: 28px; height: 28px"
-        >
-          <path
-            d="M1.5 1.91666H22.5M1.5 10.0833H22.5"
-            stroke="currentColor"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-          />
+<div class="container header__wrapper">
+  <a class="header__logo" href="">
+    <img src="./icons/logo.svg"
+         alt="">
+    <span>jefferson*</span>
+  </a>
+  <div class="header-menu__body menu-hidden-mobile">
+    <button class="menu__button">Menu</button>
+    <nav class="header__menu menu ">
+      <button class="button__close ">
+        <svg width="30" height="30">
+          <use href="./sprites/symbol-defs.svg#icon-close"></use>
         </svg>
-      </li>
-    </ul>
+      </button>
+      <label class="theme-switcher"
+             for="switcher">
+        <input type="checkbox"
+               class="theme-switcher__checkbox"
+               id="switcher">
+        <span class="theme-switcher__switch"></span>
+      </label>
+      <ul class="menu__list menu-hidden-desktop">
+        <li class="menu__item">
+          <a href="#">About me</a>
+        </li>
+        <li class="menu__item">
+          <a href="#">Benefits</a>
+        </li>
+        <li class="menu__item">
+          <a href="#">Projects</a>
+        </li>
+        <li class="menu__item">
+          <a href="#">FAQ</a>
+        </li>
+      </ul>
+      <a class="header__buy-now-mobile" href="#">Order the Project</a>
+    </nav>
   </div>
+  <div class="header__actions">
 
-  <div class="mobile-menu-header">
-    <svg class="close-btn-header" width="28" height="28">
-      <use href="../sprites/symbol-defs.svg#icon-close"></use>
-    </svg>
-    <ul class="mobile-menu-header-list">
-      <li class="mobile-menu-item">
-        <a
-          href="#about-me-section-id"
-          class="mobile-menu-item-link smooth-scroll"
-          >About me</a
-        >
-      </li>
-      <li class="mobile-menu-item">
-        <a
-          href="#benefits-section-id"
-          class="mobile-menu-item-link smooth-scroll"
-          >Benefits</a
-        >
-      </li>
-      <li class="mobile-menu-item">
-        <a
-          href="#projects-section-id"
-          class="mobile-menu-item-link smooth-scroll"
-          >Projects</a
-        >
-      </li>
-      <li class="mobile-menu-item">
-        <a href="#faq-section-id" class="mobile-menu-item-link smooth-scroll"
-          >FAQ</a
-        >
-      </li>
-    </ul>
-    <a href="#work-together-section-id" class="link-header-link smooth-scroll"
-      >Order the project</a
-    >
+    <button class="header__menu-burger ">
+      <svg width="30" height="30">
+        <use href="./sprites/symbol-defs.svg#icon-burger"></use>
+      </svg>
+    </button>
+    <a class="header__buy-now" href="#">Order the Project</a>
   </div>
-</header>
+</div>

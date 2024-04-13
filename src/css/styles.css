@@ -1,9 +1,5 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+
+
 @import url('modern-normalize/modern-normalize.css');
 @import url('./reset.css');
 @import url('./base-styles.css');
@@ -50,7 +46,7 @@
   --medium-black-color: #242527;
   --light-black-color: #3B3B3B;
   --red-color: #ED3B44;
-  --white-color: #FAFAFA;
+  --white-color: #fafafa;
 
   --animation-hover: 250ms ease-in;
 }

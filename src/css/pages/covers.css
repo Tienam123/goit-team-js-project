@@ -1,6 +1,9 @@
 .covers {
+  padding-top: 100px;
 }
-
+.covers__title{
+  display: none;
+}
 .content {
   position: relative;
 }

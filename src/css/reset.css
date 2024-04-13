@@ -1,4 +1,24 @@
 /* Reset styles */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+a:focus,
+a:active {
+  color: currentColor;
+}
+
+html,
+body {
+  min-width: 320px;
+  scroll-behavior: smooth;
+}
+.wrapper {
+  min-height: 100%;
+  overflow:clip;
+}
+
 h1,
 h2,
 h3,
@@ -26,6 +46,7 @@ button {
   border: none;
   appearance: none;
   background-color: transparent;
+  color: inherit;
 }
 
 img {

@@ -147,8 +147,9 @@ body.light .arrows-box svg {
   }
 }
 .swiper-review {
-  overflow: hidden;
-  /*padding: 10px 0;*/
+
+  overflow: clip;
+  padding: 10px 0;
 }
 
 @media screen and (min-width: 1440px) {

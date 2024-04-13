@@ -2,6 +2,9 @@
   margin: 0 auto;
   padding: 0 15px;
 }
+.swiper-hero {
+  overflow: clip;
+}
 
 .visually-hidden {
   position: absolute;

@@ -1,9 +1,5 @@
-/**
-  |============================
-  | include css partials with
-  | default @import url()
-  |============================
-*/
+
+
 @import url('modern-normalize/modern-normalize.css');
 @import url('./reset.css');
 @import url('./base-styles.css');

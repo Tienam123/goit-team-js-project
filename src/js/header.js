@@ -37,7 +37,7 @@ menuLinks.forEach(el => {
   el.addEventListener('click', ()=> {
     mobileMenu.classList.add('menu-hidden-mobile')
     menuList.classList.add('menu-hidden-desktop')
-
+    document.body.classList.remove('screen-blocked')
   })
 })
 

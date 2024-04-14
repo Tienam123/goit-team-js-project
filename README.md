@@ -24,7 +24,7 @@
 ![Alex Johnson](https://example.com/alexjohnson.png)
 - Досвід роботи: 6 місяців у розробці програмного забезпечення.
 - Спеціалізація: фронт-енд розробка, інтерфейс користувача.
--
+- FAQ
 
 ### 4. Анна Корд - Розробник
 ![Alex Johnson](https://example.com/alexjohnson.png)

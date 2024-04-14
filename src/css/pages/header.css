@@ -5,7 +5,7 @@ header {
   width: 100%;
   z-index: 1000;
   color: white;
-  padding: 15px 0;
+
 }
 body.light .header_on-top {
   color: white;
@@ -193,8 +193,8 @@ body.dark .header__scrolled {
   .button__close {
     order: 1;
     align-self: end;
-    margin-top: 10px;
-    margin-right: 10px;
+    margin-top: 22px;
+    margin-right: 16px;
   }
 
   .menu__list {

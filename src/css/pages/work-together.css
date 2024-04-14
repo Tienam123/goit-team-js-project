@@ -242,10 +242,18 @@ body.light .work-together-button:hover {
   height: 148px;
 }
 /* ===================================== */
-/* /Медиа запросы/ @media screen and (max-width: 374.98px) {
+/* Медиа запросы  */
+@media screen and (max-width: 374.98px) {
+  .work-together-input {
+    width: 100%;
+  }
 }
 @media screen and (min-width: 375px) {
-} */
+  .work-together-input {
+    width: 100%;
+  }
+}
+
 @media screen and (min-width: 768px) {
   .work-together-div {
     padding-top: 80px;

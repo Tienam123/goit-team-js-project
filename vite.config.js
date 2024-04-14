@@ -14,19 +14,19 @@ const DEFAULT_OPTIONS = {
   ansiColors: true,
   png: {
     // https://sharp.pixelplumbing.com/api-output#png
-    quality: 70,
+    quality: 80,
   },
   jpeg: {
     // https://sharp.pixelplumbing.com/api-output#jpeg
-    quality: 70,
+    quality: 80,
   },
   jpg: {
     // https://sharp.pixelplumbing.com/api-output#jpeg
-    quality: 70,
+    quality: 80,
   },
   tiff: {
     // https://sharp.pixelplumbing.com/api-output#tiff
-    quality: 70,
+    quality: 80,
   },
   // gif does not support lossless compression
   // https://sharp.pixelplumbing.com/api-output#gif

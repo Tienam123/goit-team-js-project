@@ -1,8 +1,7 @@
-/*Основные стили*/
-
 .projects {
   margin: 64px 0;
 }
+
 .projects-title {
   font-weight: 600;
   font-size: 16px;
@@ -10,10 +9,9 @@
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: var(--light-black-color);
+  margin-bottom: 32px;
 }
-.swiper-wrapper-projects {
-  margin-top: 32px;
-}
+
 .projects-top-section {
   background-color: var(--white-color);
   border-radius: 24px 24px 0 0;
@@ -96,12 +94,12 @@
 }
 /* ========================================================================== */
 /*Медиа запросы*/
-@media screen and (max-width: 374px) {
+@media screen and (max-width: 374.98px) {
   .projects-top-section {
     max-height: 417px;
   }
   .projects-bottom-section {
-    max-height: 395px;
+    height: 395px;
   }
   .projects-img-item {
     max-width: 311px;
@@ -145,7 +143,6 @@
     height: 385px;
   }
 }
-
 /* ===========DESK============================= */
 @media screen and (min-width: 1440px) {
   .projects-swiper-slide {

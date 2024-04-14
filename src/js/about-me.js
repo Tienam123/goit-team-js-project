@@ -29,22 +29,43 @@ import Accordion from 'accordion-js';
 // new Accordion('.accordion-container');
 
 new Accordion('.accordion-container', {
-  duration: 400,
+  duration: 500,
   showMultiple: true,
   openOnInit: [0],
-
-  onOpen: function (currentElement) {
-    // console.log(currentElement);
-    // console.log('currentElement is open');
-    // currentElement.querySelector('svg.ac-icon').innerHTML = `<path d="M15 12.5L10 7.5L5 12.5" stroke="#FAFAFA" stroke-width="2" />`;
-    currentElement.querySelector('svg.ac-icon').classList.add('ac-icon-active');
-  },
-  onClose: function (currentElement) {
-    // console.log(currentElement);
-    // console.log('currentElement is closed');
-    // currentElement.querySelector('svg.ac-icon').innerHTML = `<path d="M15 7.5L10 12.5L5 7.5" stroke="#FAFAFA" stroke-width="2" />`;
-    currentElement
-      .querySelector('svg.ac-icon')
-      .classList.remove('ac-icon-active');
-  },
 });
+
+const acButtons = document.querySelectorAll('.ac-trigger');
+const acS = document.querySelectorAll('.ac-icon');
+console.log(acS);
+acButtons.forEach(item =>
+  item.addEventListener('click', () => {
+    if (item.querySelector('svg.ac-icon').classList.contains('icon-first')) {
+      if (
+        item
+          .querySelector('svg.ac-icon')
+          .classList.contains('ac-icon-active-first')
+      )
+        item
+          .querySelector('svg.ac-icon')
+          .classList.remove('ac-icon-active-first');
+      else {
+        item.querySelector('svg.ac-icon').classList.add('ac-icon-active-first');
+      }
+    }
+    if (
+      item.querySelector('svg.ac-icon').classList.contains('ac-icon-active')
+    ) {
+      item.querySelector('svg.ac-icon').classList.remove('ac-icon-active');
+    } else {
+      item.querySelector('svg.ac-icon').classList.add('ac-icon-active');
+    }
+
+    // if (
+    //   item.querySelector('svg.ac-icon').classList.contains('ac-icon-active')
+    // ) {
+    //   item.querySelector('svg.ac-icon').classList.remove('ac-icon-active');
+    // } else {
+    //   item.querySelector('svg.ac-icon').classList.add('ac-icon-active');
+    // }
+  })
+);

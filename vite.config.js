@@ -5,6 +5,45 @@ import FullReload from 'vite-plugin-full-reload';
 import { resolve } from 'path';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 
+const DEFAULT_OPTIONS = {
+  test: /\.(jpe?g|png|gif|tiff|webp|avif)$/i,
+  exclude: undefined,
+  include: undefined,
+  includePublic: true,
+  logStats: true,
+  ansiColors: true,
+  png: {
+    // https://sharp.pixelplumbing.com/api-output#png
+    quality: 80,
+  },
+  jpeg: {
+    // https://sharp.pixelplumbing.com/api-output#jpeg
+    quality: 80,
+  },
+  jpg: {
+    // https://sharp.pixelplumbing.com/api-output#jpeg
+    quality: 80,
+  },
+  tiff: {
+    // https://sharp.pixelplumbing.com/api-output#tiff
+    quality: 80,
+  },
+  // gif does not support lossless compression
+  // https://sharp.pixelplumbing.com/api-output#gif
+  gif: {},
+  webp: {
+    // https://sharp.pixelplumbing.com/api-output#webp
+    lossless: true,
+  },
+  avif: {
+    // https://sharp.pixelplumbing.com/api-output#avif
+    lossless: true,
+  },
+  cache: false,
+  cacheLocation: undefined,
+};
+
+
 export default defineConfig(({ command }) => {
   return {
     define: {
@@ -32,36 +71,7 @@ export default defineConfig(({ command }) => {
     plugins: [
       injectHTML(),
       FullReload(['./src/**/**.html']),
-      ViteImageOptimizer({
-        png: {
-          quality: 80,
-        },
-        jpeg: {
-          quality: 80,
-        },
-        jpg: {
-          quality: 80,
-        },
-      },
-        {
-          plugins: [
-            {
-              name: 'preset-default',
-              params: {
-                overrides: {
-                  cleanupNumericValues: false,
-                  removeViewBox: false, // https://github.com/svg/svgo/issues/1128
-                },
-                cleanupIDs: {
-                  minify: false,
-                  remove: false,
-                },
-                convertPathData: false,
-              },
-            },
-          ]
-        }
-      )],
+      ViteImageOptimizer(DEFAULT_OPTIONS)],
     resolve: {
       alias: {
         '@': resolve(__dirname, './src'),
@@ -69,3 +79,5 @@ export default defineConfig(({ command }) => {
     },
   };
 });
+
+

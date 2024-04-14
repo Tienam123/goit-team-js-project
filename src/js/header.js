@@ -24,18 +24,20 @@ menuButton.addEventListener('click',()=> {
 burgerButton.addEventListener('click',()=> {
   mobileMenu.classList.remove('menu-hidden-mobile')
   document.body.classList.add('screen-blocked')
+  scrollToUpBtn.classList.add('visually-hidden');
 })
 
 closeButton.addEventListener('click',()=> {
   mobileMenu.classList.add('menu-hidden-mobile')
   document.body.classList.remove('screen-blocked')
+  scrollToUpBtn.classList.remove('visually-hidden');
 })
 
 menuLinks.forEach(el => {
   el.addEventListener('click', ()=> {
     mobileMenu.classList.add('menu-hidden-mobile')
     menuList.classList.add('menu-hidden-desktop')
-
+    document.body.classList.remove('screen-blocked')
   })
 })
 

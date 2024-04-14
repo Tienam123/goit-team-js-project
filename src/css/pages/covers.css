@@ -6,6 +6,9 @@
 }
 .content {
   position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .content::before {
   z-index: 0;

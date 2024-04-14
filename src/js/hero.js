@@ -1,28 +1,21 @@
 import Swiper from 'swiper';
 import { Autoplay, Navigation } from 'swiper/modules';
-
 const swiper = new Swiper('.swiper-hero', {
   modules: [
     Navigation
     ,
-    Autoplay
+    Autoplay,
   ],
-  effect: 'fade',
   loop: true,
-  autoplay:{
-    delay:5000
+  autoplay: {
+    delay: 5000,
+    waitForTransition: true,
   },
-  // Optional parameters
+  speed: 1000,
   direction: 'horizontal',
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
+  effect: 'fade',
+  fadeEffect: {
+    crossFade: true,
   },
 
-
-  // And if we need scrollbar
-  scrollbar: {
-    el: '.swiper-scrollbar',
-  },
 });

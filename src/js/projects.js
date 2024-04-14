@@ -9,3 +9,4 @@ const swiperProject = new Swiper('.swiper-projects', {
     disabledClass: 'swiper-button-projects-disabled',
   },
 });
+

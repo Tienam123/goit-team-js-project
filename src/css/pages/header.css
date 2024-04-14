@@ -318,3 +318,7 @@ body.dark .header__scrolled {
 body.light .header_on-top .header__menu-burger {
   color: white;
 }
+body.light .header__buy-now:hover {
+  color: var(--white-color);
+  border: 1px solid var(--red-color);
+}

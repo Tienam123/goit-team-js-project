@@ -105,6 +105,10 @@ li.accordion {
   .accordion-title h2 {
     cursor: pointer;
   }
+
+  .accordion-title span {
+    right: 0;
+  }
 }
 
 @media screen and (min-width: 375px) {

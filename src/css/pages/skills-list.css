@@ -107,3 +107,12 @@ body.dark .swiper-slide.swiper-skills-slide.swiper-slide-active button {
     border-radius: 50%;
   }
 }
+body.light .swiper-skill-list-next {
+  background-color: #fff;
+  cursor: pointer;
+}
+
+body.dark .swiper-skill-list-next {
+  cursor: pointer;
+  background-color: var(--hard-black-color);
+}

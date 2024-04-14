@@ -34,15 +34,26 @@ console.log(swiper);
 console.log(reviewsEl);
 //=========================================================================
 async function getReviews() {
-  const data = await getData();
-  console.log(data);
-  renderReviews(data);
+  try {
+    const data = await getData();
+    console.log(data);
+    renderReviews(data);
+  } catch (error) {
+    console.error(error);
+    alert('Not found');
+    renderReviews([]);
+  }
 }
 getReviews();
 
 //=========================================================================
 
 function renderReviews(reviews) {
+  if (reviews.length === 0) {
+    reviewsEl.innerHTML = '<p>Not found</p>';
+    return;
+  }
+
   const markup = reviews
     .map(review => {
       return `<div class="swiper-slide reviews-card-item ">
@@ -51,6 +62,7 @@ function renderReviews(reviews) {
           alt="${review.author}"
           width="48"
           height="48"
+          loading="lazy"
           class="reviews-item-img"
         />
         <h3 class="text-title reviews-card-text-title">${review.author}</h3>

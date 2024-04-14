@@ -69,10 +69,10 @@
   z-index: 2000;
 }
 body.dark .scroll-to-up{
-
+color: orange;
 }
 body.light .scroll-to-up{
-  color: #7b7777;
+  color: orange;
 }
 .icon {
   display: inline-block;

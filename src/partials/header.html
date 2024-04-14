@@ -5,9 +5,9 @@
     <span>jefferson*</span>
   </a>
   <div class="header-menu__body menu-hidden-mobile">
-    <button class="menu__button">Menu</button>
+    <button aria-label="open-menu" class="menu__button" role="button">Menu</button>
     <nav class="header__menu menu ">
-      <button class="button__close ">
+      <button class="button__close" aria-label="close-menu" role="button">
         <svg width="30" height="30">
           <use href="./sprites/symbol-defs.svg#icon-close"></use>
         </svg>
@@ -15,6 +15,8 @@
       <label class="theme-switcher"
              for="switcher">
         <input type="checkbox"
+               aria-label="change theme"
+               role="button"
                class="theme-switcher__checkbox"
                id="switcher">
         <span class="theme-switcher__switch"></span>
@@ -38,7 +40,7 @@
   </div>
   <div class="header__actions">
 
-    <button class="header__menu-burger ">
+    <button class="header__menu-burger" role="button" aria-label="open-mobile-menu">
       <svg width="30" height="30">
         <use href="./sprites/symbol-defs.svg#icon-burger"></use>
       </svg>

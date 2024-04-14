@@ -62,6 +62,7 @@ function renderReviews(reviews) {
           alt="${review.author}"
           width="48"
           height="48"
+          loading="lazy"
           class="reviews-item-img"
         />
         <h3 class="text-title reviews-card-text-title">${review.author}</h3>

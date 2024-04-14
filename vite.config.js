@@ -42,7 +42,26 @@ export default defineConfig(({ command }) => {
         jpg: {
           quality: 80,
         },
-      })],
+      },
+        {
+          plugins: [
+            {
+              name: 'preset-default',
+              params: {
+                overrides: {
+                  cleanupNumericValues: false,
+                  removeViewBox: false, // https://github.com/svg/svgo/issues/1128
+                },
+                cleanupIDs: {
+                  minify: false,
+                  remove: false,
+                },
+                convertPathData: false,
+              },
+            },
+          ]
+        }
+      )],
     resolve: {
       alias: {
         '@': resolve(__dirname, './src'),

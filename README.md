@@ -10,7 +10,7 @@
 
 ### 1. Владислав - TeamLead,Scrum Muster
 ![John Doe](https://example.com/johndoe.png)
-- Досвід роботи: понад 1 рік у розробці програмного забезпечення.
+- Досвід роботи: 1 рік у розробці програмного забезпечення.
 - Спеціалізація: JS, PHP, Frond & Back-end розробка
 - Header,Hero,Covers
 

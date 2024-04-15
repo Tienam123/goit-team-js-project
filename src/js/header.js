@@ -1,3 +1,5 @@
+import throttle from 'lodash.throttle'
+
 const mobileMenu = document.querySelector('.header-menu__body');
 const isActiveMenu = document.querySelector('.header__menu');
 const menuList = document.querySelector('.menu__list');
@@ -95,8 +97,7 @@ btnBuyNow.addEventListener('click',()=>{
   isActiveMenu.classList.remove('header__menu_active');
   document.body.classList.remove('screen-blocked');
 })
-
-window.addEventListener('scroll', (event) => {
+const handleScroll = (event) => {
   if (window.scrollY > 250) {
     header.classList.add('header__scrolled');
     scrollToUpBtn.classList.remove('visually-hidden');
@@ -106,6 +107,8 @@ window.addEventListener('scroll', (event) => {
     scrollToUpBtn.classList.add('visually-hidden');
     header.classList.add('header_on-top');
   }
-});
+}
+
+window.addEventListener('scroll', throttle(handleScroll,250));
 
 

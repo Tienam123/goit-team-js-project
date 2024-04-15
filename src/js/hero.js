@@ -1,5 +1,6 @@
 import Swiper from 'swiper';
 import { Autoplay, Navigation } from 'swiper/modules';
+
 const swiper = new Swiper('.swiper-hero', {
   modules: [
     Navigation

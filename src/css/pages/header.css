@@ -153,26 +153,19 @@ body.dark .header__scrolled {
 
   }
 
+
   .header-menu__body {
     z-index: 1000;
+  }
 
-  }
-  .menu-hidden-mobile {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0 0 0 0);
-    overflow: hidden;
-  }
+
   .menu__button {
     display: none;
   }
-
+.menu-hidden-mobile {
+  /*opacity: 0;*/
+  /*visibility: hidden;*/
+}
 
 
   .header__menu {
@@ -180,13 +173,21 @@ body.dark .header__scrolled {
     display: flex;
     background-color: rgba(0, 0, 0, 0.86);
     top: 0;
-    left: 0;
+    left: -100%;
     width: 100%;
     height: 100vh;
+    transition: all 300ms linear;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
   }
+  .header__menu.header__menu_active {
+    left: 0;
+    transition: all 300ms linear;
+
+  }
+
+
   body.light .header__menu {
     color: white;
   }

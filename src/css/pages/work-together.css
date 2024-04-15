@@ -120,10 +120,12 @@ body.dark .work-together-link:focus {
 .work-together-button {
   margin-top: 44px;
   margin-bottom: 54px;
+  color: var(--hard-black-color);
 }
 body.dark .work-together-button {
   border-radius: 100%;
   border: 1px solid var(--light-black-color);
+  color: var(--light-black-color);
 }
 .work-together-button:hover,
 .work-together-button:focus {

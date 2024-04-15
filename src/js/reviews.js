@@ -2,6 +2,7 @@ import Swiper from 'swiper';
 import { Navigation, Keyboard } from 'swiper/modules';
 import { Autoplay } from 'swiper/modules';
 import { getData } from '@/js/api.js';
+import iziToast from 'izitoast';
 
 const reviewsEl = document.querySelector('.reviews-cards');
 
@@ -40,11 +41,9 @@ async function initSwiper() {
         onlyInViewport: true,
       },
     });
-
-    console.log(swiper);
   } catch (error) {
     console.error(error);
-    alert('Not found');
+    iziToast.error('Not found')
     reviewsEl.innerHTML = '<p>Not found</p>';
   }
 }
@@ -54,8 +53,7 @@ async function getReviews() {
     const data = await getData();
     renderReviews(data);
   } catch (error) {
-    console.error(error);
-    alert('Not found');
+    iziToast.error('Not found')
     reviewsEl.innerHTML = '<p>Not found</p>';
   }
 }

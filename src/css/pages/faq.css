@@ -3,7 +3,9 @@
 .container {
   margin: 0 auto;
 }
-
+.faq {
+  scroll-margin-top: 150px;
+}
 body.dark .accordion-title h2 {
   color: white;
 }

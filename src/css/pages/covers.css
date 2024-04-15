@@ -1,5 +1,6 @@
 .covers {
   padding-top: 100px;
+  background-color: var(--hard-black-color);
 }
 .covers__title{
   display: none;
@@ -9,6 +10,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  overflow: clip;
 }
 .content::before {
   z-index: 0;
@@ -42,7 +44,7 @@
   top: 0;
   left: 0;
   z-index: 10;
-  overflow: hidden;
+
 }
 .marquee__line {
   flex-shrink: 0;

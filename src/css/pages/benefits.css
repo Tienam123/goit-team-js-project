@@ -13,7 +13,7 @@ body.light .benefit-link:hover,
 body.light .benefit-link:focus {
     border: 1px solid #ed3b44;
     color: white;
-  } 
+  }
 
 
 body.light .benefits-item {
@@ -41,6 +41,8 @@ body.light .benefit-icon-box{
 .benefits {
   padding-top: 64px;
   padding-bottom: 64px;
+  scroll-margin-top: 50px;
+
 }
 
 .benefits-wrapper {

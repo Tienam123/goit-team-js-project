@@ -1,4 +1,7 @@
 /*Основные стили*/
+.about {
+  scroll-margin-top: 100px;
+}
 .am-headline {
   display: flex;
   gap: 16px;
@@ -178,8 +181,15 @@ body.light .ac-icon {
     height: auto;
   }
 }
-
+@media screen and (max-width: 1439.98px){
+  .about {
+    padding-top: 64px;
+  }
+}
 @media screen and (min-width: 1440px) {
+  .about {
+    padding-top: 100px;
+  }
   .am-headline {
     margin-bottom: 96px;
     flex-direction: row;

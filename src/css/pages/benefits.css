@@ -23,12 +23,24 @@ body.light .benefits-item {
 body.light .benefits-title {
   color: #3B3B3B;
 }
+
+body.light .benefit-link:hover,
+body.light .benefit-link:focus{
+  color: white;
+  border: #ed3b44;
+}
+body.light .benefit-icon-box{
+  color: white;
+}
+
+
 body.light .benefit-icon-box{
     color:white
     }
+
 .benefits {
-  margin-top: 332px;
-  margin-bottom: 32px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .benefits-wrapper {

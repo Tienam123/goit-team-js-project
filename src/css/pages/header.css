@@ -28,6 +28,13 @@ body.light .header__scrolled {
   background: var(--white-color);
   transition: all 250ms ease-in-out;
 }
+body.light .header__scrolled .header__buy-now:hover{
+  color: var(--hard-black-color);
+}
+
+body.light .header__scrolled .header__buy-now{
+
+}
 body.dark .header__scrolled {
   background: var(--hard-black-color);
   transition: background 250ms ease-in-out;

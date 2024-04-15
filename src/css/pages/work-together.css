@@ -22,11 +22,17 @@ body.light .work-together-link {
   color: var(--light-black-color);
 }
 body.light .work-together-link:hover {
+  border: none;
+  transition: var(--animation-hover);
+  color: var(--white-color);
+  background-color: var(--red-color);
+}
+body.dark .work-together-link:hover {
   border: 1px solid var(--hard-black-color);
   transition: var(--animation-hover);
+  color: var(--white-color);
+  background-color: var(--red-color);
 }
-/* body.dark {
-} */
 /* ============ */
 
 .work-together-div {

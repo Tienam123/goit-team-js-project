@@ -9,6 +9,13 @@ body.light .benefit-link {
   color: #3B3B3B;
 }
 
+body.light .benefit-link:hover,
+body.light .benefit-link:focus {
+    border: 1px solid #ed3b44;
+    color: white;
+  } 
+
+
 body.light .benefits-item {
   background-color: rgb(36, 37, 39, 0.8);
 }
@@ -16,6 +23,7 @@ body.light .benefits-item {
 body.light .benefits-title {
   color: #3B3B3B;
 }
+
 body.light .benefit-link:hover,
 body.light .benefit-link:focus{
   color: white;
@@ -24,6 +32,12 @@ body.light .benefit-link:focus{
 body.light .benefit-icon-box{
   color: white;
 }
+
+
+body.light .benefit-icon-box{
+    color:white
+    }
+
 .benefits {
   padding-top: 64px;
   padding-bottom: 64px;

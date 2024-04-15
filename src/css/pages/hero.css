@@ -30,7 +30,8 @@
   border-radius: 50%;
   transition: all var(--animation-hover);
 }
-.hero__link:hover {
+.hero__link:hover,
+.hero__link:focus{
   border: 1px solid var(--red-color);
   color: var(--red-color);
 }
@@ -44,7 +45,8 @@
   padding: 5px;
   transition: all var(--animation-hover);
 }
-.hero__mail:hover {
+.hero__mail:hover,
+.hero__mail:focus{
   border: 1px solid var(--red-color);
   color: var(--red-color);
 }

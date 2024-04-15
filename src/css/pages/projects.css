@@ -60,7 +60,8 @@
   font-weight: 500;
   font-size: 16px;
 }
-.projects-btn:hover {
+.projects-btn:hover,
+.projects-btn:focus{
   background-color: transparent;
   color: var(--hard-black-color);
   border: 1px solid var(--hard-black-color);

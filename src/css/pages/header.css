@@ -27,7 +27,8 @@ body.light .header__scrolled {
   transition: background 500ms linear;
   background: var(--white-color);
 }
-body.light .header__scrolled .header__buy-now:hover{
+body.light .header__scrolled .header__buy-now:hover,
+body.light .header__scrolled .header__buy-now:focus{
   color: var(--hard-black-color);
 }
 
@@ -48,7 +49,8 @@ body.dark .header__scrolled {
   margin-right: 10px;
 }
 
-.header__logo:hover {
+.header__logo:hover,
+.header__logo:focus{
   color: var(--red-color);
 }
 
@@ -59,7 +61,8 @@ body.dark .header__scrolled {
   transition: color var(--animation-hover);
 }
 
-.menu__button:hover {
+.menu__button:hover,
+.menu__button:focus{
   color: var(--red-color);
 }
 
@@ -74,7 +77,8 @@ body.dark .header__scrolled {
   transition: color var(--animation-hover);
 }
 
-.button__close:hover svg {
+.button__close:hover svg,
+.button__close:focus svg{
   color: var(--red-color);
 }
 
@@ -105,7 +109,8 @@ body.dark .header__scrolled {
   transition: color var(--animation-hover);
 }
 
-.header__menu-burger:hover svg {
+.header__menu-burger:hover svg,
+.header__menu-burger:focus svg{
   color: var(--red-color);
 }
 
@@ -123,7 +128,8 @@ body.dark .header__scrolled {
   display: inline-block;
 }
 
-.header__buy-now:hover {
+.header__buy-now:hover ,
+.header__buy-now:focus{
   background-color: transparent;
   border: 1px solid var(--red-color);
 }
@@ -238,22 +244,8 @@ body.dark .header__scrolled {
 
   .theme-switcher__switch {
   }
-
-  .header__menu-burger svg {
-
-  }
-
-  .header__menu-burger:hover svg {
-
-  }
-
   .header__buy-now {
     display: none;
-  }
-
-
-  .header__buy-now:hover {
-
   }
 }
 
@@ -314,14 +306,16 @@ body.dark .header__scrolled {
     right:0;
     margin-right: 10px;
   }
-  .menu__item a:hover {
+  .menu__item a:hover ,
+  .menu__item a:focus{
     color:var(--red-color)
   }
 }
 body.light .header_on-top .header__menu-burger {
   color: white;
 }
-body.light .header__buy-now:hover {
+body.light .header__buy-now:hover,
+body.light .header__buy-now:focus{
   color: var(--white-color);
   border: 1px solid var(--red-color);
 }

@@ -39,10 +39,7 @@ body.light .benefit-icon-box{
     }
 
 .benefits {
-  padding-top: 64px;
-  padding-bottom: 64px;
   scroll-margin-top: 50px;
-
 }
 
 .benefits-wrapper {
@@ -128,6 +125,9 @@ body.light .benefit-icon-box{
 
 /*Медиа запросы*/
 @media screen and (max-width: 374.98px) {
+  .benefits {
+    padding: 64px 0;
+  }
 
   .benefits-wrapper {
     max-width: 288px;
@@ -139,10 +139,15 @@ body.light .benefit-icon-box{
 }
 
 @media screen and (min-width: 375px) {
-
+  .benefits {
+    padding-top: 64px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .benefits {
+    padding-top: 96px;
+  }
   .benefits-list {
     flex-direction: row;
     flex-wrap: wrap;
@@ -163,6 +168,9 @@ body.light .benefit-icon-box{
 }
 
 @media screen and (min-width: 1440px) {
+  .benefits {
+    padding-top:162px;
+  }
   .benef-title-box {
     display: flex;
   }

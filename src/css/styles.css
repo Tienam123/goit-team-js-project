@@ -23,7 +23,6 @@
 @import url('./pages/work-together.css');
 @import url('./pages/modal.css');
 @import url('./pages/skills-list.css');
-@import "node_modules/swiper/swiper.css";
 :root {
   font-family: Inter, sans-serif;
   font-size: 16px;

@@ -1,4 +1,5 @@
 import Aos from 'aos/src/js/aos.js';
+import '@/js/loader.js'
 Aos.init();
 import '@/js/iziToast.js'
 import '@/js/slider.js';

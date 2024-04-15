@@ -32,6 +32,7 @@ buttonEl.addEventListener('click', async e => {
       title: 'OK',
       color: 'green',
       message: 'Success!',
+      position: 'bottomCenter',
     });
     invalidSpan.style.display = 'none';
     validSpan.style.display = 'block';

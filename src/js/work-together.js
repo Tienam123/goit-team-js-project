@@ -5,6 +5,8 @@ const buttonEl = document.querySelector('button#sendBtn');
 const inputEmail = document.querySelector('input#user-email');
 const inputComments = document.querySelector('input#user-comments');
 
+const validSpan = document.querySelector('span#valid-email');
+const invalidSpan = document.querySelector('span#invalid-email');
 let emailInput;
 let commentsInput;
 
@@ -19,6 +21,9 @@ buttonEl.addEventListener('click', async e => {
       message: 'Invalid email, try again',
       position: 'bottomCenter',
     });
+    invalidSpan.style.display = 'block';
+    validSpan.style.display = 'none';
+    inputEmail.style.cssText += 'border-bottom: 1px solid var(--red-color)';
   } else {
     postData(emailInput, commentsInput);
     openModal();
@@ -28,6 +33,9 @@ buttonEl.addEventListener('click', async e => {
       color: 'green',
       message: 'Success!',
     });
+    invalidSpan.style.display = 'none';
+    validSpan.style.display = 'block';
+    inputEmail.style.cssText += 'border-bottom: 1px solid green';
   }
 });
 

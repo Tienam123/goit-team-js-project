@@ -101,3 +101,25 @@ body.light .scroll-to-up{
 .screen-blocked {
   overflow: hidden;
 }
+
+/* Стилизация полосы прокрутки */
+::-webkit-scrollbar {
+  width: 5px; /* Ширина полосы прокрутки */
+}
+
+/* Стилизация трека полосы прокрутки */
+::-webkit-scrollbar-track {
+  background: transparent; /* Фон полосы прокрутки */
+}
+
+/* Стилизация ползунка полосы прокрутки */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Цвет ползунка */
+  border-radius: 24px;
+
+}
+
+/* Стилизация ползунка при наведении */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Цвет ползунка при наведении */
+}

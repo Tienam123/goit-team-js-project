@@ -1,3 +1,5 @@
+import Aos from 'aos/src/js/aos.js';
+Aos.init();
 import '@/js/iziToast.js'
 import '@/js/slider.js';
 import '@/js/header.js';
@@ -12,3 +14,4 @@ import '@/js/reviews.js';
 import '@/js/work-together.js';
 import '@/js/modal.js';
 import '@/js/theme-swither.js'
+

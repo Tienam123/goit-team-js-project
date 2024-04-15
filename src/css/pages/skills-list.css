@@ -1,15 +1,24 @@
 .swiper-skills-list {
   overflow: clip;
 }
-.swiper-skills-slide button{
+body.dark .swiper-skills-slide button{
   border: 1px solid var(--light-black-color);
   border-radius: 50%;
   color: var(--white-color);
+}
+
+body.light .swiper-skills-slide button{
+  border: 1px solid var(--light-black-color);
+  border-radius: 50%;
+  color: var(--medium-black-color);
 }
 .swiper-skills-list__body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.swiper-skill-list-next {
+  cursor: pointer;
 }
 
 @media screen and (min-width: 1440px) {
@@ -21,11 +30,11 @@
 
 @media screen and (max-width: 767.98px){
   .swiper-skills-list {
-    width: 80%;
+    width: 83%;
   }
   .swiper-skills-slide button{
-    width: 130px;
-    height: 130px;
+    width: 110px;
+    height: 110px;
   }
 }
 
@@ -41,7 +50,7 @@
 @media screen and (min-width: 1440px) {
   .swiper-skills-list__body {
     padding-bottom: 162px;
-    padding-top: 82px;
+    padding-top: 162px;
   }
   .swiper-skills-list {
     width: 1300px;
@@ -56,4 +65,5 @@
 .swiper-slide.swiper-skills-slide.swiper-slide-active button{
   background-color: var(--red-color);
   border: 1px solid var(--red-color);
+  color: var(--white-color);
 }

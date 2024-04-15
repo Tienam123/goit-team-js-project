@@ -76,14 +76,12 @@ burgerButton.addEventListener('click', () => {
   mobileMenu.classList.remove('menu-hidden-mobile');
   isActiveMenu.classList.add('header__menu_active');
   document.body.classList.add('screen-blocked');
-  scrollToUpBtn.classList.add('visually-hidden');
 });
 
 closeButton.addEventListener('click', () => {
   mobileMenu.classList.add('menu-hidden-mobile');
   isActiveMenu.classList.remove('header__menu_active');
   document.body.classList.remove('screen-blocked');
-  scrollToUpBtn.classList.remove('visually-hidden');
 });
 
 menuLinks.forEach(el => {
@@ -100,11 +98,9 @@ btnBuyNow.addEventListener('click',()=>{
 const handleScroll = (event) => {
   if (window.scrollY > 250) {
     header.classList.add('header__scrolled');
-    scrollToUpBtn.classList.remove('visually-hidden');
     header.classList.remove('header_on-top');
   } else {
     header.classList.remove('header__scrolled');
-    scrollToUpBtn.classList.add('visually-hidden');
     header.classList.add('header_on-top');
   }
 }

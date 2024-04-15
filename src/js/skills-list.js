@@ -15,7 +15,7 @@ const mySwiper = new Swiper('.swiper-skills-list', {
     },
     1440: {
       slidesPerView: 6,
-      spaceBetween: 0,
+      spaceBetween: 5,
     },
   },
 

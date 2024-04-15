@@ -60,6 +60,11 @@
   font-weight: 500;
   font-size: 16px;
 }
+.projects-btn:hover {
+  background-color: transparent;
+  color: var(--hard-black-color);
+  border: 1px solid var(--hard-black-color);
+}
 .projects-bottom-section {
   background-color: var(--medium-black-color);
   border-radius: 0 0 24px 24px;

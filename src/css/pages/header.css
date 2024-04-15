@@ -21,12 +21,11 @@ body.dark .header__scrolled {
 }
 
 .header_on-top {
-  transition: all var(--animation-hover);
 
 }
 body.light .header__scrolled {
+  transition: background 500ms linear;
   background: var(--white-color);
-  transition: all 250ms ease-in-out;
 }
 body.light .header__scrolled .header__buy-now:hover{
   color: var(--hard-black-color);
@@ -37,12 +36,8 @@ body.light .header__scrolled .header__buy-now{
 }
 body.dark .header__scrolled {
   background: var(--hard-black-color);
-  transition: background 250ms ease-in-out;
+  transition: background 500ms linear;
 }
-
-.header__wrapper {
-}
-
 .header__logo {
   cursor: pointer;
   display: flex;

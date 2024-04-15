@@ -29,11 +29,25 @@ body.light .header__scrolled {
 }
 body.light .header__scrolled .header__buy-now:hover,
 body.light .header__scrolled .header__buy-now:focus{
-  color: var(--hard-black-color);
+  color: var(--white-color);
+  border: 1px solid var(--red-color);
+  background: var(--red-color);
 }
-
+body.light .header_on-top .header__buy-now{
+  background: var(--red-color);
+  border: 1px solid var(--red-color);
+  color: var(--white-color);
+}
+body.light .header_on-top .header__buy-now:hover,
+body.light .header_on-top .header__buy-now:focus{
+  background: transparent;
+  border: 1px solid var(--red-color);
+  color: var(--white-color);
+}
 body.light .header__scrolled .header__buy-now{
-
+  background: transparent;
+  border: 1px solid var(--hard-black-color);
+  color: var(--hard-black-color);
 }
 body.dark .header__scrolled {
   background: var(--hard-black-color);

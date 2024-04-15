@@ -51,6 +51,12 @@
 .theme-switcher__checkbox:checked + .theme-switcher__switch::after {
   transform: translateX(29px);
 }
+body.light  .header__scrolled .theme-switcher__switch::after {
+  background: var(--hard-black-color);
+}
+body.light .header__scrolled  .theme-switcher__switch::before {
+  border: 1px solid var(--hard-black-color);
+}
 
 .logo-link {
  display: flex;

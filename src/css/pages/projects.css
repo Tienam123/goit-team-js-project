@@ -58,9 +58,10 @@
   color: var(--white-color);
   font-weight: 500;
   font-size: 16px;
+  transition: all var(—hover-animation);
 }
 .projects-btn:hover,
-.projects-btn:focus{
+.projects-btn:focus {
   background-color: transparent;
   color: var(--hard-black-color);
   border: 1px solid var(--hard-black-color);
@@ -92,6 +93,7 @@
   width: 52px;
   height: 52px;
   background-color: transparent;
+  transition: all var(—hover-animation);
 }
 
 .btn-icon {

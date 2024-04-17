@@ -119,6 +119,7 @@ li.accordion {
 @media screen and (min-width: 375px) {
   .faq {
     padding-top: 64px;
+    padding-bottom: 32px;
   }
   .accordion {
     border-top: 1px solid var(--light-black-color);
@@ -128,6 +129,7 @@ li.accordion {
 @media screen and (min-width: 768px) {
   .faq {
     padding-top: 96px;
+    padding-bottom: 49px;
   }
   .accordion {
     border-top: 1px solid var(--light-black-color);
@@ -137,6 +139,7 @@ li.accordion {
 @media screen and (min-width: 1440px) {
   .faq {
     padding-top: 162px;
+    padding-bottom: 81px;
   }
   .accordion-list {
     display: flex;

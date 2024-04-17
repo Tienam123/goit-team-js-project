@@ -105,19 +105,19 @@
 
 @media screen and (min-width: 375px) {
   .covers {
-    padding-top: 64px;
+    padding-top: 32px;
   }
 }
 
 @media screen and (min-width: 768px) {
   .covers {
-    padding-top: 96px;
+    padding-top: 49px;
   }
 }
 
 @media screen and (min-width: 1440px) {
   .covers {
-    padding-top: 162px;
+    padding-top: 81px;
   }
 }
 body.dark .arrows_cover svg{

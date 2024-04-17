@@ -33,8 +33,6 @@ refs.form.addEventListener('submit', (e) => {
 });
 
 refs.mail.addEventListener('blur', (e) => {
-  console.log(e.target.value);
-  console.log(Validator.validateEmail(e.target.value));
   if (Validator.validateEmail(e.target.value)) {
     refs.mailValidate.style.color = 'green';
     refs.mailValidate.style.fontSize = '';

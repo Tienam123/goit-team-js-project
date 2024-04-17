@@ -13,7 +13,6 @@ export const closeModal = () => {
 }
 modal.addEventListener('click', (e)=>{
   if (e.target === e.currentTarget) {
-    console.log(e.target);
     closeModal()
     return
   }

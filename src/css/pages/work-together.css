@@ -64,7 +64,7 @@ input:-webkit-autofill {
  img {
    display: inline-block;
  }
-  p {
+  .modal__title__main {
     display: inline-block;
   }
   .modal__title__next {

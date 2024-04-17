@@ -1,6 +1,9 @@
 import iziToast from 'izitoast';
 import { openModal } from '@/js/modal.js';
+import throttle from 'lodash.throttle';
 
+const BASE__KEY = 'data';
+const data = {};
 const refs = {
   form: document.querySelector('.work-form'),
   mail: document.querySelector('.work-form__mail'),
@@ -9,21 +12,23 @@ const refs = {
   mailValidate: document.querySelector('.work-form__mail-text'),
   messageValidate: document.querySelector('.work-form__message-text'),
 };
-
+refs.mail.value = localStorage.getItem('mail') ?? '';
+refs.message.value = localStorage.getItem('message') ?? '';
 refs.form.addEventListener('submit', (e) => {
   e.preventDefault();
-  if (Validator.validateEmail(e.target.elements.usermail.value) && !Validator.validateMessage(e.target.elements.message.value).length) {
+  if (Validator.validateEmail(e.target.elements.usermail.value) &&
+    !Validator.validateMessage(e.target.elements.message.value).length) {
     iziToast.success({
       message: 'Success. Your message have been send',
-      position:'topRight'
-    })
-    e.target.reset()
-    openModal()
+      position: 'topRight',
+    });
+    e.target.reset();
+    openModal();
   } else {
     iziToast.error({
-      message:'Error. Please enter your data again',
-      position:'topRight'
-    })
+      message: 'Error. Please enter your data again',
+      position: 'topRight',
+    });
   }
 });
 
@@ -42,12 +47,17 @@ refs.mail.addEventListener('blur', (e) => {
 });
 
 refs.message.addEventListener('input', (e) => {
- if (!Validator.validateMessage(e.target.value)) {
-   refs.messageValidate.textContent = Validator.validateMessage(e.target.value)
- } else {
-   refs.messageValidate.textContent = Validator.validateMessage(e.target.value)
- }
+  if (!Validator.validateMessage(e.target.value)) {
+    refs.messageValidate.textContent = Validator.validateMessage(e.target.value);
+  } else {
+    refs.messageValidate.textContent = Validator.validateMessage(e.target.value);
+  }
+  localStorage.setItem('message', e.target.value)
 });
+
+refs.mail.addEventListener('input', throttle((e) => {
+  localStorage.setItem('mail', e.target.value)
+},500));
 
 class Validator {
   static validateEmail = (email) => {

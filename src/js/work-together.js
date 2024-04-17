@@ -18,10 +18,6 @@ refs.form.addEventListener('submit', (e) => {
   e.preventDefault();
   if (Validator.validateEmail(e.target.elements.usermail.value) &&
     !Validator.validateMessage(e.target.elements.message.value).length) {
-    iziToast.success({
-      message: 'Success. Your message have been send',
-      position: 'topRight',
-    });
     e.target.reset();
     openModal();
   } else {
@@ -34,7 +30,9 @@ refs.form.addEventListener('submit', (e) => {
 
 refs.mail.addEventListener('blur', (e) => {
   if (Validator.validateEmail(e.target.value)) {
-    return
+    refs.mailValidate.style.color = 'green';
+    refs.mailValidate.style.fontSize = '';
+    refs.mailValidate.textContent = 'Success!';
   } else {
     refs.mailValidate.style.color = '#ED3B44';
     refs.mailValidate.style.fontSize = '';

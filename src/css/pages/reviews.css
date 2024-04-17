@@ -1,8 +1,5 @@
 /*Основные стили*/
-.reviews {
-  margin-top: 32px;
-  margin-bottom: 32px;
-}
+
 
 .container {
   padding: 0 16px;
@@ -115,14 +112,19 @@ body.light .arrows-box svg {
 
 /*Медиа запросы*/
 @media screen and (max-width: 374.98px) {
+  .reviews {
+    padding-top: 64px;
+  }
 }
 
 @media screen and (min-width: 375px) {
+  .reviews {
+    padding-top: 64px;
 }
 
 @media screen and (min-width: 768px) {
-  .container {
-    padding: 0 32px;
+  .reviews {
+    padding-top: 96px;
   }
 
   .reviews-card-list {
@@ -151,6 +153,10 @@ body.light .arrows-box svg {
 }
 
 @media screen and (min-width: 1440px) {
+  .reviews {
+    padding-top: 162px;
+  }
+}
   .reviews-card-list {
     justify-content: center;
     align-items: center;

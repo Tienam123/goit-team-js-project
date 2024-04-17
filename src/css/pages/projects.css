@@ -103,6 +103,9 @@
 /* ========================================================================== */
 /*Медиа запросы*/
 @media screen and (max-width: 374.98px) {
+  .projects {
+    padding-top: 64px;
+  }
   .projects-top-section {
     max-height: 417px;
   }
@@ -116,6 +119,9 @@
 }
 
 @media screen and (min-width: 375px) {
+  .projects {
+    padding-top: 64px;
+  }
   .projects-top-section {
     height: 417px;
   }
@@ -129,6 +135,9 @@
 }
 /* =========TAB========================= */
 @media screen and (min-width: 768px) {
+  .projects {
+    padding-top: 96px;
+  }
   .projects-text {
     font-size: 44px;
   }
@@ -153,6 +162,9 @@
 }
 /* ===========DESK============================= */
 @media screen and (min-width: 1440px) {
+  .projects {
+    padding-top: 162px;
+  }
   .projects-swiper-slide {
     border-radius: 24px;
     width: 1376px;

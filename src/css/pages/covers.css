@@ -1,5 +1,4 @@
 .covers {
-  padding-top: 100px;
   background-color: var(--hard-black-color);
 }
 .covers__title{
@@ -99,15 +98,27 @@
 
 /*Медиа запросы*/
 @media screen and (max-width: 374.98px) {
+  .covers {
+    padding-top: 64px;
+  }
 }
 
 @media screen and (min-width: 375px) {
+  .covers {
+    padding-top: 64px;
+  }
 }
 
 @media screen and (min-width: 768px) {
+  .covers {
+    padding-top: 96px;
+  }
 }
 
 @media screen and (min-width: 1440px) {
+  .covers {
+    padding-top: 162px;
+  }
 }
 body.dark .arrows_cover svg{
 color: white;

@@ -1,12 +1,78 @@
 .modal-backdrop {
-  position: absolute;
-  background-color: rgba(0, 0, 0, 0.41);
+  background-color: rgba(143, 143, 143, 0.2);
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  z-index: 5;
+  z-index: 1000;
+  width: 100vw;
+  height: 100vh;
 }
-.modal-backdrop-hidden{
-  display: none;
+
+.modal__body {
+  z-index: 3000;
+  background-color: var(--medium-black-color);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  padding: 64px;
+  border-radius: 20px;
+  border: 1px solid rgba(250, 250, 250, 0.1);
+}
+
+.modal-close-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}
+.modal-close-btn svg {
+  width: 20px;
+  height: 20px;
+}
+
+.work-together-icon {
+}
+
+.modal__title {
+  color: var(--white-color);
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+.modal__text {
+  margin-top: 16px;
+  color: rgba(250, 250, 250, 0.6);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: -0.02em;
+  text-align: center;
+}
+
+@media screen and (max-width: 374.98px){
+  .modal__body {
+    width: 90%;
+  }
+}
+
+
+@media screen and (min-width: 375px){
+  .modal__body {
+    width: 370px;
+  }
+  .modal__title {
+
+  }
+}
+
+
+@media screen and (min-width: 768px){
+  .modal__body {
+    width: 492px;
+  }
 }

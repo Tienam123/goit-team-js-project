@@ -1,58 +1,73 @@
 import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
-import { postData } from './api';
-const buttonEl = document.querySelector('button#sendBtn');
-const inputEmail = document.querySelector('input#user-email');
-const inputComments = document.querySelector('input#user-comments');
+import { openModal } from '@/js/modal.js';
 
-const validSpan = document.querySelector('span#valid-email');
-const invalidSpan = document.querySelector('span#invalid-email');
-let emailInput;
-let commentsInput;
+const refs = {
+  form: document.querySelector('.work-form'),
+  mail: document.querySelector('.work-form__mail'),
+  message: document.querySelector('.work-form__message'),
+  sendButton: document.querySelector('.work-form__button'),
+  mailValidate: document.querySelector('.work-form__mail-text'),
+  messageValidate: document.querySelector('.work-form__message-text'),
+};
 
-buttonEl.addEventListener('click', async e => {
+refs.form.addEventListener('submit', (e) => {
   e.preventDefault();
-  emailInput = inputEmail.value;
-  commentsInput = inputComments.value;
-  const pattern = /^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$/;
-  if (!pattern.test(emailInput)) {
-    iziToast.error({
-      title: 'Error',
-      message: 'Invalid email, try again',
-      position: 'bottomCenter',
-    });
-    invalidSpan.style.display = 'block';
-    validSpan.style.display = 'none';
-    inputEmail.style.cssText += 'border-bottom: 1px solid var(--red-color)';
-  } else {
-    postData(emailInput, commentsInput);
-    openModal();
-    document.querySelector('form.work-together-form').reset();
+  if (Validator.validateEmail(e.target.elements.usermail.value) && !Validator.validateMessage(e.target.elements.message.value).length) {
     iziToast.success({
-      title: 'OK',
-      color: 'green',
-      message: 'Success!',
-      position: 'bottomCenter',
-    });
-    invalidSpan.style.display = 'none';
-    validSpan.style.display = 'block';
-    inputEmail.style.cssText += 'border-bottom: 1px solid green';
+      message: 'Success. Your message have been send',
+      position:'topRight'
+    })
+    e.target.reset()
+    openModal()
+  } else {
+    iziToast.error({
+      message:'Error. Please enter your data again',
+      position:'topRight'
+    })
   }
 });
 
-const modalOverlay = document.querySelector('.modal-overlay');
-const modalWindow = document.querySelector('.modal-window');
-const closeModal = document.querySelector(
-  '.work-together-button-modale-window'
-);
-// open modal
-// buttonEl.addEventListener('click', openModal);
-function openModal() {
-  modalWindow.classList.remove('visually-hidden');
-  modalOverlay.classList.remove('visually-hidden');
-}
-// close modal
-closeModal.addEventListener('click', () => {
-  modalWindow.classList.add('visually-hidden');
-  modalOverlay.classList.add('visually-hidden');
+refs.mail.addEventListener('blur', (e) => {
+  console.log(e.target.value);
+  console.log(Validator.validateEmail(e.target.value));
+  if (Validator.validateEmail(e.target.value)) {
+    refs.mailValidate.style.color = 'green';
+    refs.mailValidate.style.fontSize = '';
+    refs.mailValidate.textContent = 'Success!';
+  } else {
+    refs.mailValidate.style.color = '#ED3B44';
+    refs.mailValidate.style.fontSize = '';
+    refs.mailValidate.textContent = 'Invalid email, try again!';
+  }
 });
+
+refs.message.addEventListener('input', (e) => {
+ if (!Validator.validateMessage(e.target.value)) {
+   refs.messageValidate.textContent = Validator.validateMessage(e.target.value)
+ } else {
+   refs.messageValidate.textContent = Validator.validateMessage(e.target.value)
+ }
+});
+
+class Validator {
+  static validateEmail = (email) => {
+    const pattern = '^[\\w\\.-]+@[a-zA-Z\\d\\.-]+\\.[a-zA-Z]{2,}$';
+    if (String(email)
+      .match(pattern) && email.trim().length > 0) {
+      return true;
+    } else {
+      return false;
+    }
+  };
+
+  static validateMessage = (message) => {
+    const trimmedMessage = message.trim();
+    if (trimmedMessage.length <= 0) {
+      return `Сan't be empty`;
+    } else if (trimmedMessage.length > 200) {
+      return 'You have exceeded the limit';
+    } else {
+      return '';
+    }
+  };
+}

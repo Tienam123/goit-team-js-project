@@ -96,6 +96,9 @@ li.accordion {
 
 /*Медиа запросы*/
 @media screen and (max-width: 374.98px) {
+  .faq {
+    padding-top: 64px;
+  }
   .accordion-list {
     display: block;
   }
@@ -114,18 +117,27 @@ li.accordion {
 }
 
 @media screen and (min-width: 375px) {
+  .faq {
+    padding-top: 64px;
+  }
   .accordion {
     border-top: 1px solid var(--light-black-color);
   }
 }
 
 @media screen and (min-width: 768px) {
+  .faq {
+    padding-top: 96px;
+  }
   .accordion {
     border-top: 1px solid var(--light-black-color);
   }
 }
 
 @media screen and (min-width: 1440px) {
+  .faq {
+    padding-top: 162px;
+  }
   .accordion-list {
     display: flex;
     flex-wrap: wrap;

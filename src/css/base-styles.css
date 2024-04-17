@@ -192,3 +192,7 @@ body.light .scroll-to-up{
     box-shadow: .2em -.2em 0 0 currentcolor;
   }
 }
+
+body {
+  scrollbar-color:var(--light-black-color);
+}

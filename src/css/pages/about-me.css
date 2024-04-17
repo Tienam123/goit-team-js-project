@@ -174,13 +174,13 @@ body.light .ac-icon {
 /*Медиа запросы*/
 @media screen and (max-width: 374.98px) {
   .aboutme-list {
-    padding: 20px 0;
+    padding-bottom: 24px;
   }
 }
 
 @media screen and (min-width: 375px) {
   .aboutme-list li {
-    padding: 20px 0;
+    padding-bottom: 24px;
   }
 }
 
@@ -229,7 +229,7 @@ body.light .ac-icon {
     width: 50%;
     margin-left: auto;
     margin-right: 0;
-    padding: 48px;
+    padding-bottom: 48px;
   }
   .am-main {
     margin-bottom: 96px;

@@ -14,9 +14,18 @@ body.dark  {
   .work-form input{
     color: var(--white-color);
   }
+  .work-form input:focus-within {
+    border-bottom: 1px solid var(--white-color);
+  }
   .contact__item a {
     border: 1px solid var(--light-black-color);
     color: var(--white-color);
+    transition: all var(--animation-hover);
+  }
+  .contact__item a:hover {
+    border: 1px solid var(--red-color);
+    color: var(--white-color);
+    background-color: var(--red-color);
   }
 }
 
@@ -39,6 +48,7 @@ body.light  {
   .contact__item a {
     border: 1px solid var(--hard-black-color);
     color: var(--hard-black-color);
+    transition: all var(--animation-hover);
   }
   .contact__item a:hover {
     border: 1px solid var(--red-color);

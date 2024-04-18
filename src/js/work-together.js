@@ -26,6 +26,7 @@ refs.form.addEventListener('submit', (e) => {
     postData(data)
       .then(res => {
         openModal(res.data.title, res.data.message);
+        refs.mailValidate.textContent = '';
         e.target.reset();
         localStorage.setItem('mail', '');
         localStorage.setItem('message', '');

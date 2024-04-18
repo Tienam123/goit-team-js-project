@@ -1,18 +1,12 @@
 import axios from 'axios';
 
-export async function postData(emailInput, commentsInput) {
-  try {
-    const response = await axios.post(
-      'https://portfolio-js.b.goit.study/api-docs/requests',
-      {
-        email: emailInput,
-        comments: commentsInput,
-      }
-    );
-    console.log(response.data);
-  } catch (error) {
-    console.error(error);
-  }
+export async function postData(data) {
+  const res = await axios.post('https://portfolio-js.b.goit.study/api/requests/', data, {
+    headers: {
+      'Content-Type': 'application/json',
+    },
+  });
+  return res;
 }
 
 export async function getData() {
@@ -23,7 +17,8 @@ export async function getData() {
   try {
     const response = await axios.get(url);
     return response.data;
-  } catch (error) {
+  }
+  catch (error) {
     throw new Error('Not found');
   }
 }

@@ -1,6 +1,7 @@
 import iziToast from 'izitoast';
 import { openModal } from '@/js/modal.js';
 import throttle from 'lodash.throttle';
+import { postData } from '@/js/api.js';
 
 const BASE__KEY = 'data';
 const data = {};
@@ -18,8 +19,27 @@ refs.form.addEventListener('submit', (e) => {
   e.preventDefault();
   if (Validator.validateEmail(e.target.elements.usermail.value) &&
     !Validator.validateMessage(e.target.elements.message.value).length) {
+    const data = JSON.stringify({
+      email: e.target.elements.usermail.value,
+      comment: e.target.elements.message.value,
+    });
+    postData(data)
+      .then(res => {
+        openModal(res.data.title, res.data.message);
+        e.target.reset();
+        localStorage.setItem('mail', '');
+        localStorage.setItem('message', '');
+      })
+      .catch(err => {
+        iziToast.error({
+          message: err.message,
+          position: 'topRight',
+        });
+      });
+
     e.target.reset();
-    openModal();
+
+    // openModal();
   } else {
     iziToast.error({
       message: 'Error. Please enter your data again',
@@ -46,12 +66,12 @@ refs.message.addEventListener('input', (e) => {
   } else {
     refs.messageValidate.textContent = Validator.validateMessage(e.target.value);
   }
-  localStorage.setItem('message', e.target.value)
+  localStorage.setItem('message', e.target.value);
 });
 
 refs.mail.addEventListener('input', throttle((e) => {
-  localStorage.setItem('mail', e.target.value)
-},500));
+  localStorage.setItem('mail', e.target.value);
+}, 500));
 
 class Validator {
   static validateEmail = (email) => {

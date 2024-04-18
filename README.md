@@ -33,9 +33,10 @@
   - Спеціалізація: JS, PHP, Frond & Back-end розробка
   - Hero,Covers
 ### 2. - Людмила
-![Alex Johnson](https://example.com/alexjohnson.png)
+![Людмила](./assets/lud.jpeg)
 - Досвід роботи: 6 місяців у розробці програмного забезпечення.
 - Спеціалізація: фронт-енд розробка, інтерфейс користувача.
+- Header
 
 ### 3. Дмитро Злагодух - `Developer`
 ![Дмитро Злагодух](./assets/dmytr.jpg)
